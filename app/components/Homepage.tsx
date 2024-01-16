@@ -38,7 +38,7 @@ export default function Homepage() {
           <div
             className={`menu-info font-bold  ${isMenuOpen ? "appear" : "hide"}`}
           >
-            <nav className="text-[16px] lg:hidden  space-y-5 font-semibold">
+            <nav className="text-sm mt-10 lg:hidden ml-5 space-y-5 font-semibold">
               <ul>
                 <a href="">HOME</a>
               </ul>

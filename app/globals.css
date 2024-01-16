@@ -71,6 +71,7 @@ input {
   margin: 4px 0;
   border-radius: 2px;
   transition: all 0.2s linear;
+  z-index: 2;
 }
 
 .menu-btn-one {
@@ -104,4 +105,14 @@ input {
 }
 .show {
   display: block;
+}
+
+.menu-info {
+  background: whitesmoke;
+  width: 70%;
+  margin-top: -70px;
+  position: fixed;
+  right: -10px;
+  height: 100%;
+  z-index: 1;
 }

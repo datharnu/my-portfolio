@@ -106,7 +106,9 @@ export default function Homepage() {
       <div className="py-10 sm:flex justify-center">
         <Image src={profileImage} alt="profile-image" />
       </div>
-      <p className="text-right -mt-5   ">What can i conjure up for you today</p>
+      <p className="lg:text-right lg:-mt-16 sm:-mt-5 text-center ">
+        What can i conjure up for you today
+      </p>
     </section>
   );
 }

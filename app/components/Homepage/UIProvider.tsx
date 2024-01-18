@@ -1,6 +1,11 @@
 "use client";
-import React from "react";
+import React, { ReactNode } from "react";
 import { NextUIProvider } from "@nextui-org/react";
-export default function Providers({ children }): { children: React.ReactNode } {
+
+interface ProvidersProps {
+  children: ReactNode;
+}
+
+export default function Providers({ children }: ProvidersProps): JSX.Element {
   return <NextUIProvider>{children}</NextUIProvider>;
 }

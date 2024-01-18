@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
-import Instagram from "../../public/instagram (1).svg";
-import Github from "../../public/github.svg";
-import Linkedin from "../../public/linkedin-01.svg";
-import Twitter from "../../public/new-twitter-rectangle.svg";
+import Instagram from "../../../public/instagram (1).svg";
+import Github from "../../../public/github.svg";
+import Linkedin from "../../../public/linkedin-01.svg";
+import Twitter from "../../../public/new-twitter-rectangle.svg";
 export default function Social() {
   return (
     <section className="lg:pt-10 sm:py-5">

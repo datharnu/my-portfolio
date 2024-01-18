@@ -3,8 +3,11 @@
 @tailwind utilities;
 
 body {
-  /* margin-left: 150px;
-  margin-right: 150px; */
+  /* background-image: url("/background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #fefbf5; */
 }
 
 .logo {
@@ -107,7 +110,7 @@ input {
   display: block;
 }
 
-.menu-info {
+/* .menu-info {
   background: whitesmoke;
   width: 70%;
   margin-top: -70px;
@@ -115,4 +118,36 @@ input {
   right: -10px;
   height: 100%;
   z-index: 1;
+} */
+
+.play {
+  font-family: Playfair Display;
+}
+
+.open {
+  font-family: Open Sans;
+}
+
+.aboutMe {
+  color: #000;
+  text-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
+  font-family: Playfair Display;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px; /* 120% */
+}
+.about-info {
+  font-family: Open Sans;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 300px;
+  background: #fff;
 }

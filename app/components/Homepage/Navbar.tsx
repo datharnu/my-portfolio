@@ -31,9 +31,9 @@ export default function Navbar() {
   return (
     <section>
       <div className="py-10 flex justify-between">
-        <div className="">
+        <motion.div className="">
           <h1 className="logo text-4xl md:text-6xl lg:text-[96px]">OA</h1>
-        </div>
+        </motion.div>
 
         {/* Navbar Small Screen */}
         <motion.nav
@@ -44,23 +44,36 @@ export default function Navbar() {
           {/* Menu Item small Screen */}
           <motion.div className="background" variants={sidebar}>
             <nav className="text-sm mt-20 lg:hidden ml-5 space-y-5 font-semibold">
-              <motion.ul whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-                <Link href="/">HOME</Link>
+              <motion.ul whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+                <Link className="nav-link" href="/">
+                  HOME
+                </Link>
+              </motion.ul>
+              <motion.ul whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+                <Link className="nav-link" href="">
+                  PROJECTS
+                </Link>
               </motion.ul>
               <motion.ul whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-                <Link href="">PROJECTS</Link>
+                <Link className="nav-link" href="about">
+                  ABOUT
+                </Link>
               </motion.ul>
               <motion.ul whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-                <Link href="about">ABOUT</Link>
-              </motion.ul>
-              <motion.ul whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-                <Link href="">CONTACT</Link>
+                <Link className="nav-link" href="">
+                  CONTACT
+                </Link>
               </motion.ul>
             </nav>
           </motion.div>
           <motion.div
             onClick={() => toggleOpen()}
             className="menu-btn-one lg:hidden"
+            animate={{
+              scale: [1, 2, 1, 1],
+              rotate: [0, 0, 270, 270, 0],
+              borderRadius: ["20%", "20%", "50%", "20%"],
+            }}
           >
             <input type="checkbox" />
             <span className="click"></span>
@@ -71,18 +84,18 @@ export default function Navbar() {
 
         {/* Navbar large Screen */}
         <nav className="text-[16px] sm:hidden md:hidden space-y-5 font-semibold">
-          <ul>
+          <motion.ul whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
             <Link href="/">HOME</Link>
-          </ul>
-          <ul>
+          </motion.ul>
+          <motion.ul whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
             <Link href="">PROJECTS</Link>
-          </ul>
-          <ul>
+          </motion.ul>
+          <motion.ul whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
             <Link href="about">ABOUT</Link>
-          </ul>
-          <ul>
+          </motion.ul>
+          <motion.ul whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
             <Link href="">CONTACT</Link>
-          </ul>
+          </motion.ul>
         </nav>
       </div>
     </section>

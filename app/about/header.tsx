@@ -1,7 +1,9 @@
+"use client";
 import React from "react";
 import Frame12 from "../../public/Frame 56.png";
 import Image from "next/image";
 import { Button } from "@nextui-org/react";
+import Slider from "./Image";
 export default function Header() {
   return (
     <div>
@@ -9,7 +11,7 @@ export default function Header() {
       <article className="relative">
         {/* Image*/}
         <div className="my-5  ">
-          <Image src={Frame12} alt="profile-picture" className="w-full h-56 " />
+          <Slider className="w-full h-56" />
         </div>
 
         {/* Name & Title */}

@@ -152,3 +152,17 @@ input {
   background: #fff;
   z-index: 1;
 }
+.nav-link::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: aquamarine;
+  visibility: hidden;
+  transition: 0.3s ease-in-out;
+}
+.nav-link:hover::before,
+.nav-link.active::before {
+  width: 100%;
+  visibility: visible;
+}

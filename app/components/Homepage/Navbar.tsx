@@ -67,41 +67,21 @@ export default function Navbar() {
             <span className="click"></span>
             <span className="click"></span>
           </motion.div>
-
-          {/* Conditionally render navigation items based on isOpen */}
-          {/* {isOpen && (
-            <div className="font-bold background ">
-              <nav className="text-sm mt-20 lg:hidden ml-5 space-y-5 font-semibold">
-                <ul>
-                  <a href="">HOME</a>
-                </ul>
-                <ul>
-                  <a href="">PROJECTS</a>
-                </ul>
-                <ul>
-                  <a href="#Aboutme">ABOUT</a>
-                </ul>
-                <ul>
-                  <a href="">CONTACT</a>
-                </ul>
-              </nav>
-            </div>
-          )} */}
         </motion.nav>
 
         {/* Navbar large Screen */}
         <nav className="text-[16px] sm:hidden md:hidden space-y-5 font-semibold">
           <ul>
-            <a href="">HOME</a>
+            <Link href="/">HOME</Link>
           </ul>
           <ul>
-            <a href="">PROJECTS</a>
+            <Link href="">PROJECTS</Link>
           </ul>
           <ul>
-            <a href="#Aboutme">ABOUT</a>
+            <Link href="about">ABOUT</Link>
           </ul>
           <ul>
-            <a href="">CONTACT</a>
+            <Link href="">CONTACT</Link>
           </ul>
         </nav>
       </div>

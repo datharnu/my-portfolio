@@ -150,4 +150,5 @@ input {
   bottom: 0;
   width: 300px;
   background: #fff;
+  z-index: 1;
 }

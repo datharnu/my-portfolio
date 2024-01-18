@@ -8,7 +8,7 @@ export default function Header() {
       {/* Image Header */}
       <article className="relative">
         {/* Image*/}
-        <Image src={Frame12} alt="profile-picture" className="my-5 w-fulld " />
+        <Image src={Frame12} alt="profile-picture" className="my-5 w-full " />
         {/* Name & Title */}
         <div className="profile-title absolute md:bottom-10  lg:bottom-16 left-20 text-white sm:hidden">
           <h1 className="font-bold play md:text-[26px] text-[40px] text-center">

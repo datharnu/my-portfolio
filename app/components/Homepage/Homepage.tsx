@@ -9,7 +9,7 @@ import Social from "./Social";
 import { Button } from "@nextui-org/react";
 export default function Homepage() {
   return (
-    <section className="bg-bgImg bg-center bg-no-repeat bg-cover ">
+    <section className="bg-primary bg-center bg-no-repeat bg-cover ">
       <article className="lg:mx-[150px] mx-5 ">
         <Navbar />
         {/* title */}

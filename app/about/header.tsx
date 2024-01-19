@@ -11,7 +11,7 @@ export default function Header() {
       <article className="relative">
         {/* Image*/}
         <div className="my-5  ">
-          <Slider className="w-full h-56" />
+          <Slider />
         </div>
 
         {/* Name & Title */}

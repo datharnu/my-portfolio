@@ -4,7 +4,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import myImage from "../../../public/neww.jpeg";
+import myImage from "../../../public/Frame 2.png";
 import Navbar from "./Navbar";
 import Social from "./Social";
 import { Button } from "@nextui-org/react";
@@ -26,7 +26,7 @@ const draw = {
 };
 export default function Homepage() {
   return (
-    <section className="bg-primary hero bg-center bg-no-repeat bg-cover ">
+    <section className=" hero bg-center bg-no-repeat bg-cover ">
       <article className="lg:mx-[150px] mx-5 ">
         <Navbar />
         {/* title */}
@@ -35,7 +35,7 @@ export default function Homepage() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 3 }}
-            className="box text-center sm:my-10 "
+            className="box text-center sm:my-5 "
           >
             <h1 className="title">Hi! I’m</h1>
             <span className="title-span">Odunayo</span>
@@ -55,12 +55,12 @@ export default function Homepage() {
             transition={{ duration: 1 }}
             className="py-10 sm:flex  md:flex justify-center sm:-mt-10 "
           >
-            <Image
+            {/* <Image
               src={myImage}
               alt="profile-image"
               width={350}
               className="border-secondary border-4 sm:border-none sm:rounded-none rounded-tl-lg rounded-tr-3xl rounded-bl-3xl rounded-br-lg "
-            />
+            /> */}
           </motion.div>
           {/* <p className="lg:text-right lg:-mt-16 -mt-5  text-center ">
             What can i conjure up for you today

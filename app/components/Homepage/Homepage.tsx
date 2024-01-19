@@ -4,7 +4,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import profileImage from "../../../public/myImage.jpg";
+import myImage from "../../../public/myImage.jpg";
 import Navbar from "./Navbar";
 import Social from "./Social";
 import { Button } from "@nextui-org/react";
@@ -80,7 +80,7 @@ export default function Homepage() {
             className="py-10 sm:flex  md:flex justify-center sm:-mt-10 "
           >
             <Image
-              src={profileImage}
+              src={myImage}
               alt="profile-image"
               width={350}
               className="border-secondary border-4 sm:border-none sm:rounded-none rounded-tl-lg rounded-tr-3xl rounded-bl-3xl rounded-br-lg "

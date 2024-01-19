@@ -4,7 +4,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import myImage from "../../../public/myImage.jpg";
+import myImage from "../../../public/Frame 2.png";
 import Navbar from "./Navbar";
 import Social from "./Social";
 import { Button } from "@nextui-org/react";

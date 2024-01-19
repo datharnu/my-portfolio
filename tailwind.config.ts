@@ -19,9 +19,13 @@ const config: Config = {
     extend: {
       backgroundImage: {
         bgImg: "url(/background.png)",
+        bgImg2: "url(/back1.jpg)",
+        bgImg3: "url(/back2.jpg)",
+        bgImg4: "url(/back3.jpg)",
       },
       colors: {
         primary: "#FEFBF5",
+        secondary: "#996a0d",
       },
     },
   },

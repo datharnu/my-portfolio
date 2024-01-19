@@ -10,6 +10,16 @@ body {
   background-color: #fefbf5; */
 }
 
+@media screen and (min-width: 768px) {
+  .hero {
+    background: linear-gradient(
+        rgba(254, 251, 245, 0.9),
+        rgba(254, 251, 245, 0.9)
+      ),
+      url("../public/background.png") center/cover no-repeat;
+  }
+}
+
 .logo {
   color: #000;
   font-family: Playfair Display;
@@ -36,14 +46,14 @@ body {
 }
 .info {
   color: #000;
-  font-family: Open Sans;
+  /* font-family: Open Sans; */
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 .info-span {
   color: #996a0d;
-  font-family: Open Sans;
+  /* font-family: Open Sans; */
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -125,7 +135,7 @@ input {
 }
 
 .open {
-  font-family: Open Sans;
+  /* font-family: Open Sans; */
 }
 
 .aboutMe {
@@ -138,7 +148,7 @@ input {
   line-height: 48px; /* 120% */
 }
 .about-info {
-  font-family: Open Sans;
+  /* font-family: Open Sans; */
   font-weight: 400;
   line-height: normal;
 }
@@ -152,12 +162,24 @@ input {
   background: #fff;
   z-index: 1;
 }
+.nav-link {
+  color: #4e4e4e;
+  font-weight: 500;
+  position: relative;
+}
+.nav-link:hover,
+.nav-link.active {
+  color: #996a0d;
+}
 .nav-link::before {
   content: "";
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
-  background-color: aquamarine;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  transform: translateX(80%);
+  background-color: #996a0d;
   visibility: hidden;
   transition: 0.3s ease-in-out;
 }

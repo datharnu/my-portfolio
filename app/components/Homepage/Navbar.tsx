@@ -13,7 +13,7 @@ const sidebar = {
     },
   }),
   closed: {
-    clipPath: "circle(30px at 1px 1px)",
+    clipPath: "circle(0px at 21px 1px)",
     transition: {
       delay: 0.5,
       type: "spring",
@@ -30,7 +30,7 @@ export default function Navbar() {
 
   return (
     <section>
-      <div className="py-10 flex justify-between">
+      <div className="pt-10 flex justify-between">
         <motion.div className="">
           <h1 className="logo text-4xl md:text-6xl lg:text-[96px]">OA</h1>
         </motion.div>
@@ -45,22 +45,22 @@ export default function Navbar() {
           <motion.div className="background" variants={sidebar}>
             <nav className="text-sm mt-20 lg:hidden ml-5 space-y-5 font-semibold">
               <motion.ul whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-                <Link className="nav-link" href="/">
+                <Link className="nav-link hover:font-bold" href="/">
                   HOME
                 </Link>
               </motion.ul>
               <motion.ul whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-                <Link className="nav-link" href="">
+                <Link className="nav-link hover:font-bold" href="">
                   PROJECTS
                 </Link>
               </motion.ul>
               <motion.ul whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-                <Link className="nav-link" href="about">
+                <Link className="nav-link hover:font-bold" href="about">
                   ABOUT
                 </Link>
               </motion.ul>
               <motion.ul whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-                <Link className="nav-link" href="">
+                <Link className="nav-link hover:font-bold" href="">
                   CONTACT
                 </Link>
               </motion.ul>
@@ -85,16 +85,24 @@ export default function Navbar() {
         {/* Navbar large Screen */}
         <nav className="text-[16px] sm:hidden md:hidden space-y-5 font-semibold">
           <motion.ul whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-            <Link href="/">HOME</Link>
+            <Link className="nav-link hover:font-bold" href="/">
+              HOME
+            </Link>
           </motion.ul>
           <motion.ul whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-            <Link href="">PROJECTS</Link>
+            <Link className="nav-link hover:font-bold" href="">
+              PROJECTS
+            </Link>
           </motion.ul>
           <motion.ul whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-            <Link href="about">ABOUT</Link>
+            <Link className="nav-link hover:font-bold" href="about">
+              ABOUT
+            </Link>
           </motion.ul>
           <motion.ul whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-            <Link href="">CONTACT</Link>
+            <Link className="nav-link hover:font-bold" href="contact">
+              CONTACT
+            </Link>
           </motion.ul>
         </nav>
       </div>

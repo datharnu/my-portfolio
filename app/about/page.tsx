@@ -4,6 +4,8 @@ import Navbar from "../components/Homepage/Navbar";
 import Image from "next/image";
 import Frame12 from "../../public/Frame 12.png";
 import Header from "./header";
+import { motion } from "framer-motion";
+import { Button } from "@nextui-org/react";
 export default function About() {
   return (
     <section className=" ">
@@ -29,9 +31,9 @@ export default function About() {
               magician behind the curtain, making things happen with a wave of
               my coding wand.
             </p>
-            <button className="lg:text-[14px] border-black border-2 p-2 bg-white hover:shadow-lg hover:translate-x-2">
+            <Button className="lg:text-[14px] border-black border-2 p-2 bg-white hover:shadow-lg hover:-translate-y-2 rounded-none">
               Download CV/Resume
-            </button>
+            </Button>
           </div>
         </div>
         {/* Skills */}

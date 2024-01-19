@@ -40,30 +40,6 @@ export default function Homepage() {
             <h1 className="title">Hi! I’m</h1>
             <span className="title-span">Odunayo</span>
           </motion.div>
-
-          {/* <div className="info text-center lg:text-[16px] text-lg ">
-            <p className="">
-              I'm a <span className="info-span">frontend developer</span>, the
-              architect of the digital realm you see and
-            </p>
-            <p>
-              interact with. My world revolves around crafting user interfaces,
-              making sure they're
-            </p>
-            <p>
-              not just functional but also look slick and feel intuitive. From
-              HTML and CSS for
-            </p>
-            <p>
-              structure and style, to JavaScript for the interactive magic—I'm
-              the one who brings
-            </p>
-            <p>
-              designs to life in your browser. It's like being the magician
-              behind the curtain, making
-            </p>
-            <p>things happen with a wave of my coding wand.</p>
-          </div>  */}
         </article>
         <article className="sm:flex sm:flex-col-reverse ">
           {/* Info slide in / social Links */}

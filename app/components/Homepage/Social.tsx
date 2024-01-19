@@ -8,7 +8,7 @@ import { Link } from "@nextui-org/react";
 import { motion } from "framer-motion";
 export default function Social() {
   return (
-    <section className="lg:pt-10 sm:py-5 md:py-5">
+    <section className="lg:pt-10 sm:py-5 md:py-5 mb-96">
       <div className="flex gap-5 justify-center ">
         {/* Instagram */}
         <motion.div
@@ -24,7 +24,6 @@ export default function Social() {
               src={Instagram}
               alt="Instagram"
               className="cursor-pointer  "
-              width={40}
             />
           </Link>
         </motion.div>
@@ -36,7 +35,7 @@ export default function Social() {
           transition={{ type: "spring", stiffness: 120 }}
         >
           <Link className="hover:scale-110 " href="https://github.com/datharnu">
-            <Image src={Github} alt="Github" className="" width={40} />
+            <Image src={Github} alt="Github" className="" />
           </Link>
         </motion.div>
 
@@ -50,7 +49,7 @@ export default function Social() {
             className="hover:scale-110"
             href="https://www.linkedin.com/me?trk=p_mwlite_profile_self-secondary_nav"
           >
-            <Image src={Linkedin} alt="Linkedin" width={40} />
+            <Image src={Linkedin} alt="Linkedin" />
           </Link>
         </motion.div>
         {/* Twitter */}
@@ -63,7 +62,7 @@ export default function Social() {
             className="hover:scale-110"
             href="https://twitter.com/Harnu_haryo"
           >
-            <Image src={Twitter} alt="Twitter" width={40} />
+            <Image src={Twitter} alt="Twitter" />
           </Link>
         </motion.div>
       </div>

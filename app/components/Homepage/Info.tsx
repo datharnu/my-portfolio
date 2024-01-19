@@ -29,7 +29,7 @@ function Section({ children }: SectionProps): JSX.Element {
 export default function Info(): JSX.Element {
   return (
     <Section>
-      <div className="info text-center lg:text-[16px] text-lg sm:text-sm ">
+      <div className="info text-center lg:text-[16px] text-lg sm:text-sm sm:font-semibold  ">
         <p className="">
           I'm a <span className="info-span">frontend developer</span>, the
           architect of the digital realm you see and
@@ -52,6 +52,7 @@ export default function Info(): JSX.Element {
         </p>
         <p>things happen with a wave of my coding wand.</p>
       </div>
+      {/* small screen Info */}
     </Section>
   );
 }

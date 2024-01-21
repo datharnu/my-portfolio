@@ -29,9 +29,9 @@ function Section({ children }: SectionProps): JSX.Element {
 export default function Info(): JSX.Element {
   return (
     <Section>
-      <div className="info text-center lg:text-[16px] text-lg sm:text-sm sm:font-semibold  ">
+      <div className="info text-center lg:text-[16px] text-lg sm:text-sm  sm:px-10  ">
         <p className="">
-          I'm a <span className="info-span">frontend developer</span>, the
+          I'm a <span className="info-span ">frontend developer</span>, the
           architect of the digital realm you see and
         </p>
         <p>

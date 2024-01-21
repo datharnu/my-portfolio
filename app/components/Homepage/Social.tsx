@@ -8,7 +8,7 @@ import { Link } from "@nextui-org/react";
 import { motion } from "framer-motion";
 export default function Social() {
   return (
-    <section className="lg:pt-10 sm:py-5 md:py-5 mb-96">
+    <section className="lg:pt-10 sm:py-5 md:py-5 ">
       <div className="flex gap-5 justify-center ">
         {/* Instagram */}
         <motion.div

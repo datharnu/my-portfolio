@@ -4,11 +4,16 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import myImage from "../../../public/Frame 2.png";
+import myImage from "../../../public/myImage.jpg";
+import mine from "../../../public/mine.jpg";
+import mie from "../../../public/mie.jpeg";
 import Navbar from "./Navbar";
 import Social from "./Social";
 import { Button } from "@nextui-org/react";
 import Info from "./Info";
+import { Avatar, AvatarGroup } from "@nextui-org/react";
+import Contact from "@/app/contact/page";
+import MyImage from "./Avatar";
 
 const draw = {
   hidden: { pathLength: 0, opacity: 0 },
@@ -26,22 +31,27 @@ const draw = {
 };
 export default function Homepage() {
   return (
-    <section className=" hero bg-center bg-no-repeat bg-cover ">
+    <section className=" hero bg-center bg-no-repeat bg-cover h-screen ">
       <article className="lg:mx-[150px] mx-5 ">
         <Navbar />
         {/* title */}
-        <article className="lg:flex-col lg:space-y-10 ">
+        <article className="lg:flex-col lg:space-y-10 my-10  ">
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 3 }}
             className="box text-center sm:my-5 "
           >
-            <h1 className="title">Hi! I’m</h1>
-            <span className="title-span">Odunayo</span>
+            <h1 className="text-[64px] font-bold sm:text-3xl md:text-5xl ">
+              Hi! I’m
+              <span className="title-span sm:text-3xl md:text-5xl ">
+                Emmanuel
+              </span>
+            </h1>
+            <h1 className="title sm:text-3xl md:text-5xl">Olagbemisoye</h1>
           </motion.div>
         </article>
-        <article className="sm:flex sm:flex-col-reverse ">
+        <article className="sm:flex sm:flex-col-reverse sm:-mt-10 ">
           {/* Info slide in / social Links */}
           <div className="lg:mt-5">
             <Info />
@@ -49,19 +59,9 @@ export default function Homepage() {
           </div>
 
           {/* profile Image */}
-          <motion.div
-            initial={{ opacity: 0, y: -50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
-            className="py-10 sm:flex  md:flex justify-center sm:-mt-10 "
-          >
-            {/* <Image
-              src={myImage}
-              alt="profile-image"
-              width={350}
-              className="border-secondary border-4 sm:border-none sm:rounded-none rounded-tl-lg rounded-tr-3xl rounded-bl-3xl rounded-br-lg "
-            /> */}
-          </motion.div>
+
+          <MyImage />
+
           {/* <p className="lg:text-right lg:-mt-16 -mt-5  text-center ">
             What can i conjure up for you today
           </p> */}

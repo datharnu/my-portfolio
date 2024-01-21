@@ -9,8 +9,7 @@ import Header from "./header";
 import { motion } from "framer-motion";
 import { Button } from "@nextui-org/react";
 import { Progress } from "@nextui-org/react";
-import { Chip } from "@nextui-org/react";
-import { CheckIcon } from "lucide-react";
+
 import Portfolio from "./Portfolio";
 import Footer from "./footer";
 

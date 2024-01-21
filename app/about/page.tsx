@@ -15,7 +15,7 @@ import Footer from "./footer";
 
 export default function About() {
   return (
-    <section className="bg-primary">
+    <section className="bg-bgImg hero">
       <div>
         {/* Navbar */}
         <div className="lg:mx-[150px] mx-5 ">

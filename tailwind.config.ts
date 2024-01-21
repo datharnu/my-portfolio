@@ -23,14 +23,11 @@ const config: Config = {
         bgImg3: "url(/back2.jpg)",
         bgImg4: "url(/back3.jpg)",
       },
-      textColor: {
-        "blue-500": "#3490dc",
-        black: "#000000",
-        "red-500": "#e3342f",
-      },
+
       colors: {
         primary: "#FEFBF5",
         secondary: "#996a0d",
+        shad: "#5D5555",
         footer: "#1C1817",
       },
     },

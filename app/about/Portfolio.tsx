@@ -21,7 +21,7 @@ const PortfolioItem: React.FC<PortfolioItemProps> = ({
 
   return (
     <div
-      className="relative   shadow-secondary  shadow-md mx-5 sm:flex rounded-xl  overflow-hidden"
+      className="relative   shadow-shad  shadow-2xl mx-5 sm:flex rounded-xl  overflow-hidden"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -37,17 +37,17 @@ const PortfolioItem: React.FC<PortfolioItemProps> = ({
 
 export default function Portfolio() {
   return (
-    <section className="lg:my-36">
-      <h1 className="font-bold text-[40px] sm:text-center lg:my-10 lg:ml-20 sm:text-[20px] ">
+    <section className="lg:my-36 my-20 ">
+      <h1 className="font-bold text-[40px] text-center lg:my-10 lg:ml-20 sm:text-[20px] ">
         Portfolio
       </h1>
-      <div className="lg:flex lg:mx-20 px-2 sm:my-4 sm:space-y-10 gap-5  ">
+      <div className="lg:flex lg:mx-20 px-2 md:mx-24 sm:my-4  sm:space-y-10 md:space-y-10 gap-5  ">
         <div>
           <a href="https://chowdeck-alpha.vercel.app/">
             <PortfolioItem
               imageSrc={design3}
               alt="Responsive Design"
-              text="Project 1"
+              text="Responsive Design"
               textColor="text-blue-500" // Customize text color here
             />
           </a>
@@ -57,7 +57,7 @@ export default function Portfolio() {
             <PortfolioItem
               imageSrc={design2}
               alt="Design"
-              text="Project 2"
+              text="Web Design"
               textColor="text-green-500" // Customize text color here
             />
           </a>
@@ -67,7 +67,7 @@ export default function Portfolio() {
             <PortfolioItem
               imageSrc={design1}
               alt="Design"
-              text="Project 3"
+              text="Mobile Design"
               textColor="text-red-500" // Customize text color here
             />
           </a>

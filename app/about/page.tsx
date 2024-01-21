@@ -25,10 +25,12 @@ export default function About() {
         <Header />
         {/* About Me */}
         <div className="lg:flex justify-between lg:px-[150px] lg:py-20 sm:text-center md:text-center">
-          <h1 className="aboutMe sm:text-[24px]">About Me</h1>
+          <h1 className="aboutMe sm:text-[24px] md:text-[35px] md:mb-2 ">
+            About Me
+          </h1>
 
-          <div className="lg:w-[50%] space-y-10 sm:mb-5">
-            <p className="about-info lg:text-sm sm:text-xs mx-5 sm:font-semibold">
+          <div className="lg:w-[50%] space-y-10 sm:mb-5 md:mb-7">
+            <p className="about-info lg:text-sm sm:text-xs md:font-semibold  mx-5 sm:font-semibold">
               I'm a frontend developer, the architect of the digital realm you
               see and interact with. My world revolves around crafting user
               interfaces, making sure they're not just functional but also look
@@ -47,8 +49,10 @@ export default function About() {
         {/* Skills */}
         <article>
           <div className="lg:flex " style={{ backgroundColor: "#5D5555" }}>
-            <div className="text-center text-white my-auto mx-auto border-black border-4 lg:p-10 rounded-b-3xl sm:border-none md:border-none sm:relative sm:mx-12 sm:px-5  sm:py-4 ">
-              <h1 className="play lg:text-[40px] ">Skills</h1>
+            <div className="text-center text-white my-auto mx-auto border-black border-4 lg:p-10 rounded-b-3xl sm:border-none md:border-none sm:relative sm:mx-12  sm:px-5 md:py-5  sm:py-4 ">
+              <h1 className="play lg:text-[40px] md:text-[35px] sm:text-[24px] ">
+                Skills
+              </h1>
               <div className=" lg:text-[16px] open font-light sm:text-sm sm:fill-content3-foreground ">
                 <p>We'd love to hear from you! Whether you have questions,</p>
                 <p>
@@ -62,7 +66,7 @@ export default function About() {
               </div>
             </div>
             {/* portfolio */}
-            <div className="text-white flex flex-col  mt-10 font-bold gap-5 w-full max-w-md mx-auto my-10 sm:px-10 sm:gap-2 sm:pb-10">
+            <div className="text-white flex flex-col  mt-10 font-bold gap-5 w-full max-w-md mx-auto my-10 sm:px-10 sm:gap-2 sm:pb-10 md:gap-2 md:pb-14">
               {/* <h1>HTML</h1>
                 <h1>CSS</h1>
                 <h1>TAILWIND CSS</h1>

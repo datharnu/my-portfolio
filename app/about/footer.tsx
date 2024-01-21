@@ -9,7 +9,7 @@ import Social from "../components/Homepage/Social";
 export default function Footer() {
   return (
     <section className="bg-footer">
-      <article className="py-10">
+      <article className="py-10 sm:mx-10">
         <div className="text-white text-center">
           <h1 className="lg:text-[40px] play ">Let's work together</h1>
           <p>I would love to hear from you so feel free to reach out</p>
@@ -20,27 +20,29 @@ export default function Footer() {
         </div>
 
         {/* Reach me */}
-        <div className="text-white -mt-10 space-y-2 lg:ml-20">
-          <div className="mb-5">
-            <h1 className="lg:text-[20px]">Reach Me</h1>
+        <div className="text-white lg:-mt-10 md:mt-10 space-y-2 lg:ml-20 text-center ">
+          <div className="mb-5 sm:mt-5">
+            <h1 className="lg:text-[20px] ">Reach Me</h1>
           </div>
           {/* Email */}
-          <div className="flex gap-5">
+          <div className="flex gap-5 md:ml-5 sm:justify-center">
             <Image src={mail} alt="email" />
             <span>Olagbemisoyee@gmail.com</span>
           </div>
           {/* Telephone */}
-          <div className="flex gap-5">
+          <div className="flex gap-5 md:ml-5 md:pt-2 sm:justify-center">
             <Image src={telephone} alt="telephone" />
             <span>+2349065434849</span>
           </div>
         </div>
-        <div className="text-white flex justify-center gap-2">
+        {/* Social Links */}
+        <div className="lg:flex justify-end relative  bottom-10 lg:mr-20 sm:mt-10">
+          <Social />
+        </div>
+        {/* Copyright */}
+        <div className="text-white flex justify-center gap-2 text-center ">
           <Image src={copyright} alt="copyright" className="" />
           <p>2024 Emmanuel Odunayo Olagbemisoye. All Right Reserved.</p>
-        </div>
-        <div className="flex justify-end relative bottom-32 lg:mr-20">
-          <Social />
         </div>
       </article>
     </section>

@@ -3,7 +3,6 @@ import Image, { StaticImageData } from "next/image";
 import design1 from "../../public/desktop-preview-1.jpg";
 import design2 from "../../public/desktop-preview.jpg";
 import design3 from "../../public/design3.jpg";
-import { Link } from "lucide-react";
 
 interface PortfolioItemProps {
   imageSrc: StaticImageData;

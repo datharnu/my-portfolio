@@ -47,7 +47,7 @@ export default function About() {
         {/* Skills */}
         <article>
           <div className="lg:flex " style={{ backgroundColor: "#5D5555" }}>
-            <div className="text-center text-white my-auto mx-auto border-secondary border-4 lg:p-10 rounded-b-3xl sm:relative sm:mx-12 sm:px-5 sm:border-t-0 sm:border-2 sm:py-4 ">
+            <div className="text-center text-white my-auto mx-auto border-black border-4 lg:p-10 rounded-b-3xl sm:border-none md:border-none sm:relative sm:mx-12 sm:px-5  sm:py-4 ">
               <h1 className="play lg:text-[40px] ">Skills</h1>
               <div className=" lg:text-[16px] open font-light sm:text-sm sm:fill-content3-foreground ">
                 <p>We'd love to hear from you! Whether you have questions,</p>

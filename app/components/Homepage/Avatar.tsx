@@ -1,8 +1,8 @@
 import React from "react";
 import { Avatar, AvatarGroup } from "@nextui-org/react";
 import Image, { StaticImageData } from "next/image";
-import imageSrc from "../../../public/myImage.jpg";
-import mine from "../../../public/mine.jpg";
+import imageSrc from "../../../public/myImage.jpeg";
+import mine from "../../../public/mine.jpeg";
 import mie from "../../../public/mie.jpeg";
 import { motion } from "framer-motion";
 const MyImage: React.FC = () => {

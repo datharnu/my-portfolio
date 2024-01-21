@@ -3,10 +3,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import Image from "next/image";
-import myImage from "../../../public/myImage.jpg";
-import mine from "../../../public/mine.jpg";
-import mie from "../../../public/mie.jpeg";
+
 import Navbar from "./Navbar";
 import Social from "./Social";
 import { Button } from "@nextui-org/react";

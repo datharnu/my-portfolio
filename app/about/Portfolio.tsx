@@ -21,11 +21,15 @@ const PortfolioItem: React.FC<PortfolioItemProps> = ({
 
   return (
     <div
-      className="relative border-secondary lg:border-4 overflow-hidden"
+      className="relative border-secondary sm:border-black lg:border-4 sm:border-2  overflow-hidden"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <Image src={imageSrc} alt={alt} className=" h-[25rem] object-contain" />
+      <Image
+        src={imageSrc}
+        alt={alt}
+        className=" h-[25rem] sm:h-[5rem] object-contain"
+      />
       {isHovered && (
         <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
           <p className={` font-bold text-lg ${textColor}`}>{text}</p>
@@ -38,8 +42,10 @@ const PortfolioItem: React.FC<PortfolioItemProps> = ({
 export default function Portfolio() {
   return (
     <section className="lg:my-36">
-      <h1 className="font-bold text-[40px] my-10 ml-20 ">Portfolio</h1>
-      <div className="lg:flex lg:mx-20 gap-5">
+      <h1 className="font-bold text-[40px] sm:text-center lg:my-10 lg:ml-20 sm:text-[20px] ">
+        Portfolio
+      </h1>
+      <div className="flex lg:mx-20 px-2 sm:my-4 sm:gap-2 gap-5">
         <a href="https://chowdeck-alpha.vercel.app/">
           <PortfolioItem
             imageSrc={design3}

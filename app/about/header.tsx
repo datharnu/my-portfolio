@@ -15,7 +15,7 @@ export default function Header() {
         </div>
 
         {/* Name & Title */}
-        <div className="profile-title absolute md:bottom-10  lg:bottom-16 left-20 text-white sm:hidden">
+        <div className="profile-title absolute md:bottom-10  lg:bottom-16 left-20 text-white sm:hidden lg:hidden">
           <h1 className="font-bold play md:text-[26px] text-[40px] text-center">
             Odunayo
           </h1>

@@ -2,7 +2,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 import NextImage, { StaticImageData } from "next/image";
-import frame56 from "../../public/myImage.jpeg";
+import frame56 from "../../public/coper.jpg";
+import frame2 from "../../public/myImage.jpeg";
+import neww from "../../public/mine.jpeg";
 
 // Define the types
 interface ImageProps {
@@ -37,7 +39,7 @@ const MyImage: React.FC<ImageProps> = ({ imageSrc, width }) => {
         <NextImage
           src={imageSrc}
           alt=""
-          className="w-full h-[15rem] sm:h-[7rem] object-cover border-secondary lg:border-y-2 "
+          className="w-full h-[17rem] sm:h-[10rem] object-cover border-shad lg:border-8 lg:border-l-0   "
           onLoad={() => setIsLoaded(true)}
         />
       </motion.div>
@@ -48,8 +50,17 @@ const MyImage: React.FC<ImageProps> = ({ imageSrc, width }) => {
 // Slider component
 const Slider: React.FC = () => {
   return (
-    <div className="">
-      <MyImage imageSrc={frame56} width="" />
+    <div className="flex sm:overflow-x-auto  ">
+      <div>
+        <MyImage imageSrc={frame56} width="250px" />
+      </div>
+      <div>
+        <MyImage imageSrc={frame2} width="250px" />
+      </div>
+
+      <div>
+        <MyImage imageSrc={neww} width="250px" />
+      </div>
     </div>
   );
 };

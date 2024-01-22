@@ -39,7 +39,7 @@ const MyImage: React.FC<ImageProps> = ({ imageSrc, width }) => {
         <NextImage
           src={imageSrc}
           alt=""
-          className="w-full h-[17rem] sm:h-[10rem] object-cover border-shad lg:border-8 lg:border-l-0   "
+          className="w-full  h-[17rem] sm:h-[10rem] object-cover sm:border-shad sm:border-y-8       "
           onLoad={() => setIsLoaded(true)}
         />
       </motion.div>
@@ -50,15 +50,15 @@ const MyImage: React.FC<ImageProps> = ({ imageSrc, width }) => {
 // Slider component
 const Slider: React.FC = () => {
   return (
-    <div className="flex sm:overflow-x-auto  ">
-      <div>
+    <div className="flex sm:overflow-x-auto ">
+      <div className=" lg:border-shad md:border-shad border-y-8 sm:border-none md:w-[150px] ">
         <MyImage imageSrc={frame56} width="250px" />
       </div>
-      <div>
+      <div className="lg:border-shad md:border-shad border-y-8 sm:border-none lg:border-l-8  sm:border-shad  sm:border-x-8 md:w-[150px]">
         <MyImage imageSrc={frame2} width="250px" />
       </div>
 
-      <div>
+      <div className="lg:border-shad md:border-shad border-8 sm:border-none rounded-r-xl ">
         <MyImage imageSrc={neww} width="250px" />
       </div>
     </div>

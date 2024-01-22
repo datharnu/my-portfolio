@@ -6,7 +6,7 @@ import { Button } from "@nextui-org/react";
 import Slider from "./Image";
 export default function Header() {
   return (
-    <div>
+    <div className="md:my-10">
       {/* Image Header */}
       <article className="relative">
         {/* Image*/}
@@ -15,7 +15,7 @@ export default function Header() {
         </div>
 
         {/* Name & Title */}
-        <div className="profile-title absolute md:bottom-10  lg:bottom-16 left-20 text-white sm:hidden lg:hidden">
+        <div className="profile-title absolute md:bottom-10  lg:bottom-16 left-20 text-white md:hidden sm:hidden lg:hidden">
           <h1 className="font-bold play md:text-[26px] text-[40px] text-center">
             Odunayo
           </h1>

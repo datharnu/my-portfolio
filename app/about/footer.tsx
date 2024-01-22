@@ -20,10 +20,7 @@ export default function Footer() {
         </div>
 
         {/* Reach me */}
-        <div className="text-white lg:-mt-10 md:mt-10 space-y-2 lg:ml-20 text-center ">
-          <div className="mb-5 sm:mt-5">
-            <h1 className="lg:text-[20px] ">Reach Me</h1>
-          </div>
+        <div className="text-white sm:mt-10 lg:-mt-10 md:mt-10 space-y-2 lg:ml-20 text-center ">
           {/* Email */}
           <div className="flex gap-5 md:ml-5 sm:justify-center">
             <Image src={mail} alt="email" />

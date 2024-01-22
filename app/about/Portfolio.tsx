@@ -4,13 +4,13 @@ import design1 from "../../public/desktop-preview-1.jpg";
 import design2 from "../../public/desktop-preview.jpg";
 import design3 from "../../public/design3.jpg";
 import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 
 interface PortfolioItemProps {
   imageSrc: StaticImageData;
   alt: string;
   text: string;
   textColor: string;
+  hoverBorderColor: string;
 }
 
 const PortfolioItem: React.FC<PortfolioItemProps> = ({
@@ -18,27 +18,15 @@ const PortfolioItem: React.FC<PortfolioItemProps> = ({
   alt,
   text,
   textColor,
+  hoverBorderColor,
 }) => {
   const [isHovered, setIsHovered] = React.useState(false);
-  const [ref, inView] = useInView({
-    triggerOnce: true,
-  });
-
-  React.useEffect(() => {
-    if (inView) {
-      setIsHovered(true);
-    }
-  }, [inView]);
 
   return (
     <motion.div
-      ref={ref}
-      initial={{ opacity: 0, scale: 0.8 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.5 }}
       whileHover={{ scale: 1.05 }} // Example animation: Scale up on hover
       className={`relative shadow-yellow-900 shadow-2xl mx-5 sm:flex rounded-xl overflow-hidden ${
-        isHovered ? "border-b-8 border-shad" : "border-yellow-600"
+        isHovered ? `border-b-8 ${hoverBorderColor}` : "border-yellow-600"
       }`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
@@ -67,6 +55,7 @@ export default function Portfolio() {
               alt="Responsive Design"
               text="Responsive Design"
               textColor="text-blue-500" // Customize text color here
+              hoverBorderColor="border-blue-500" // Customize hover border color here
             />
           </a>
         </div>
@@ -77,6 +66,7 @@ export default function Portfolio() {
               alt="Design"
               text="Web Design"
               textColor="text-green-500" // Customize text color here
+              hoverBorderColor="border-green-500" // Customize hover border color here
             />
           </a>
         </div>
@@ -87,6 +77,7 @@ export default function Portfolio() {
               alt="Design"
               text="Mobile Design"
               textColor="text-red-500" // Customize text color here
+              hoverBorderColor="border-red-500" // Customize hover border color here
             />
           </a>
         </div>

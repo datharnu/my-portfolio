@@ -5,7 +5,7 @@ import React, { useState } from "react";
 export default function Form() {
   const [value, setValue] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault();
     // Do something with the form data, for now, just log it
     console.log("First Name:", value);

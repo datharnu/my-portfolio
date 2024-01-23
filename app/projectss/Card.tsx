@@ -77,11 +77,11 @@ const cardsData = [
 
 export default function ProjectCard() {
   return (
-    <section className="lg:grid lg:grid-cols-4 gap-4 md:grid md:grid-cols-2   ">
+    <section className="lg:grid lg:grid-cols-4 gap-4 md:grid md:grid-cols-2 mx-5   ">
       {cardsData.map(({ image, info, button, title }, index) => (
         <div
           key={index}
-          className=" max-w-96 mx-auto md:mx-5   shadow-2xl rounded-lg shadow-yellow-900 my-20 py-5 bg-primary"
+          className=" max-w-96 mx-auto  md:mx-5   shadow-2xl rounded-lg shadow-yellow-900 my-20 py-5 bg-primary"
         >
           {/* Card Image */}
           <div className="m-5">

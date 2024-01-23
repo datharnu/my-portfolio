@@ -77,22 +77,22 @@ const cardsData = [
 
 export default function ProjectCard() {
   return (
-    <section className="lg:grid lg:grid-cols-4 gap-4 md:grid md:grid-cols-2 mx-10 ">
+    <section className="lg:grid lg:grid-cols-4 gap-4 md:grid md:grid-cols-2   ">
       {cardsData.map(({ image, info, button, title }, index) => (
         <div
           key={index}
-          className=" max-w-96  shadow-2xl rounded-lg shadow-yellow-900 my-20 py-5 bg-primary"
+          className=" max-w-96 mx-auto md:mx-5   shadow-2xl rounded-lg shadow-yellow-900 my-20 py-5 bg-primary"
         >
           {/* Card Image */}
           <div className="m-5">
             <Image src={image} alt="frame" className="w-[588px]" />
           </div>
           {/* Card Info */}
-          <div className="my-5 w-[] space-y-5 lg:text-sm sm:text-xs   sm:font-semibold">
+          <div className="my-5  space-y-5   ">
             <h1 className="lg:text-[18px] font-semibold px-5 play text-yellow-900 ">
               {title}
             </h1>
-            <p className="px-5">{info}</p>
+            <p className="px-5 sm:text-xs lg:text-sm">{info}</p>
           </div>
           <Button className="lg:text-[14px] border-black border-2 p-2 bg-white hover:shadow-lg hover:-translate-y-2 rounded-none sm:text-xs mx-5 px-5 ">
             {button}

@@ -50,7 +50,7 @@ export default function Navbar() {
                 </Link>
               </motion.ul>
               <motion.ul whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-                <Link className="nav-link hover:font-bold" href="">
+                <Link className="nav-link hover:font-bold" href="projectss">
                   PROJECTS
                 </Link>
               </motion.ul>
@@ -60,7 +60,7 @@ export default function Navbar() {
                 </Link>
               </motion.ul>
               <motion.ul whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-                <Link className="nav-link hover:font-bold" href="">
+                <Link className="nav-link hover:font-bold" href="contact">
                   CONTACT
                 </Link>
               </motion.ul>
@@ -90,7 +90,7 @@ export default function Navbar() {
             </Link>
           </motion.ul>
           <motion.ul whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-            <Link className="nav-link hover:font-bold" href="">
+            <Link className="nav-link hover:font-bold" href="projectss">
               PROJECTS
             </Link>
           </motion.ul>

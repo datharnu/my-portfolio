@@ -65,6 +65,7 @@ export default function About() {
                 connect!
               </div>
             </div>
+
             {/* portfolio */}
             <div className="text-white flex flex-col  mt-10 font-bold gap-5 w-full max-w-md mx-auto my-10 sm:px-10 sm:gap-2 sm:pb-10 md:gap-2 md:pb-14">
               {/* <h1>HTML</h1>

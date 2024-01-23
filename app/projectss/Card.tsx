@@ -3,7 +3,7 @@ import Image, { StaticImageData } from "next/image";
 import { Button } from "@nextui-org/react";
 import IpAdress from "../../public/Ip Address Tracker.webp";
 import FilterJob from "../../public/filterapp.webp";
-import Chowdeck from "../../public/chowdeck2.png";
+import Chowdeck from "../../public/chowdeck3.jpeg";
 import Newsletter from "../../public/design2.jpg";
 import FacebookNotification from "../../public/design1.jpg";
 import UrlShortener from "../../public/urlShorten.jpeg";

@@ -1,14 +1,16 @@
 /* eslint-disable react/no-unescaped-entities */
+"use client";
 import React from "react";
 import Navbar from "../components/Homepage/Navbar";
 import Header from "../about/header";
 import { Button } from "@nextui-org/react";
 import ProjectCard from "./Card";
 import Link from "next/link";
+import Footer from "../about/footer";
 
 export default function Projects() {
   return (
-    <section className="bg-bgImg hero pb-10">
+    <section className="bg-bgImg hero ">
       <div>
         {/* Navbar */}
         <div className="lg:mx-[150px] mx-5">
@@ -23,16 +25,14 @@ export default function Projects() {
               Projects
             </h1>
             <div className="lg:flex justify-between ">
-              <div className=" sm:text-sm lg:text-[16px]  sm:px-10 md:px-20  ">
+              <div className=" sm:text-sm lg:text-[16px] sm:text-center md:text-center sm:px-10 md:px-16 lg:w-[50%] ">
                 <p>
-                  Need a touch of magic on the user interface? Our frontend
-                  sorcerers are at your service! Whether it's fixing bugs,
+                  Ready to bring a touch of magic to your user interface? I'm
+                  here to lend a hand! Whether it's tackling bugs, enhancing
+                  responsiveness, or refining aesthetics, you can count on me to
+                  get the job done. Thanks! maestros and let the enchantment
+                  begin.
                 </p>
-                <p>
-                  adding a sprinkle of responsiveness, or just making things
-                  look downright gorgeous, reach out to our frontend
-                </p>
-                <p> maestros and let the enchantment begin.</p>
               </div>
               <div>
                 {/* Discover Button */}
@@ -51,6 +51,8 @@ export default function Projects() {
             </article>
           </div>
         </article>
+        {/* Footer */}
+        <Footer />
       </div>
     </section>
   );

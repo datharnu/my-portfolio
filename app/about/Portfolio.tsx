@@ -25,7 +25,7 @@ const PortfolioItem: React.FC<PortfolioItemProps> = ({
   return (
     <motion.div
       whileHover={{ scale: 1.05 }} // Example animation: Scale up on hover
-      className={`relative shadow-yellow-900 shadow-2xl mx-5 sm:flex rounded-xl overflow-hidden ${
+      className={`relative shadow-yellow-900 shadow-2xl sm:mx-5 md:mx-10 sm:flex rounded-xl overflow-hidden ${
         isHovered ? `border-b-8 ${hoverBorderColor}` : "border-yellow-600"
       }`}
       onMouseEnter={() => setIsHovered(true)}

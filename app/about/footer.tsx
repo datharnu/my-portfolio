@@ -6,6 +6,7 @@ import telephone from "../../public/telephone.svg";
 import { Button } from "@nextui-org/react";
 import copyright from "../../public/copyright.svg";
 import Social from "../components/Homepage/Social";
+import Link from "next/link";
 export default function Footer() {
   return (
     <section className="bg-footer">
@@ -14,9 +15,11 @@ export default function Footer() {
           <h1 className="lg:text-[40px] play ">Let's work together</h1>
           <p>I would love to hear from you so feel free to reach out</p>
 
-          <Button className="lg:text-[20px] play font-bold text-white border-white mt-5 border-2 p-2 px-5 bg-black hover:shadow-lg hover:-translate-y-2 rounded-none cursor-pointer">
-            Contact Me
-          </Button>
+          <Link href="/contact">
+            <Button className="lg:text-[20px] play font-bold text-white border-white mt-5 border-2 p-2 px-5 bg-black hover:shadow-lg hover:-translate-y-2 rounded-none cursor-pointer">
+              Contact Me
+            </Button>
+          </Link>
         </div>
 
         {/* Reach me */}

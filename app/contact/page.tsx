@@ -24,10 +24,8 @@ export default function Contact() {
             Contact
           </h1>
           <p className="text-center sm:text-sm lg:text-[16px] lg:px-72 sm:px-10 md:px-20 ">
-            Need a touch of magic on the user interface? Our frontend sorcerers
-            are at your service! Whether it's fixing bugs, adding a sprinkle of
-            responsiveness, or just making things look downright gorgeous, reach
-            out to our frontend maestros and let the enchantment begin.
+            Feel free to reach out to me by completing the form below, and I'll
+            get back to you as soon as I can.
           </p>
         </div>
 

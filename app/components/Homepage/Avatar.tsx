@@ -4,6 +4,7 @@ import Image, { StaticImageData } from "next/image";
 import imageSrc from "../../../public/myImage.jpeg";
 import mine from "../../../public/mine.jpeg";
 import mie from "../../../public/mie.jpeg";
+import coper from "../../../public/coper.jpg";
 import { motion } from "framer-motion";
 const MyImage: React.FC = () => {
   const convertToUrl = (image: StaticImageData) => {
@@ -19,7 +20,7 @@ const MyImage: React.FC = () => {
         className="my-5 sm:hidden md:hidden"
       >
         <AvatarGroup isBordered max={3} size="lg">
-          <Avatar src={convertToUrl(mie)} color="success" />
+          <Avatar src={convertToUrl(coper)} color="success" />
           <Avatar src={convertToUrl(mine)} color="danger" />
           <Avatar src={convertToUrl(imageSrc)} color="warning" />
           <Avatar src="https://i.pravatar.cc/150?u=a04258114e29026302d" />
@@ -35,7 +36,7 @@ const MyImage: React.FC = () => {
         className="sm:my-5 lg:hidden"
       >
         <AvatarGroup isBordered max={3}>
-          <Avatar src={convertToUrl(mie)} color="success" />
+          <Avatar src={convertToUrl(coper)} color="success" />
           <Avatar src={convertToUrl(mine)} color="danger" />
           <Avatar src={convertToUrl(imageSrc)} color="warning" />
           <Avatar src="https://i.pravatar.cc/150?u=a04258114e29026302d" />

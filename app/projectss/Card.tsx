@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Image, { StaticImageData } from "next/image";
 import { Button } from "@nextui-org/react";
@@ -10,6 +11,7 @@ import UrlShortener from "../../public/urlShorten.jpeg";
 import AdviceGenerator from "../../public/Advice generator.webp";
 import CardComponent from "../../public/Card Component.jpeg";
 import CarApp from "../../public/Car App.jpeg";
+import { motion } from "framer-motion";
 
 interface cardsData {
   image: StaticImageData;
@@ -77,11 +79,14 @@ const cardsData = [
 
 export default function ProjectCard() {
   return (
-    <section className="lg:grid lg:grid-cols-4 gap-4 md:grid md:grid-cols-2 mx-5   ">
+    <section className="lg:grid lg:grid-cols-4 gap-4 lg:gap-10 md:grid md:grid-cols-2 mx-5   ">
       {cardsData.map(({ image, info, button, title }, index) => (
-        <div
+        <motion.div
           key={index}
-          className=" max-w-96 mx-auto  md:mx-5   shadow-2xl rounded-lg shadow-yellow-900 my-20 py-5 bg-primary"
+          transition={{ duration: 0.5 }}
+          whileInView={{ scale: 1.05, opacity: 1, y: 0 }}
+          initial={{ scale: 0.5, opacity: 0, y: 50 }}
+          className="  mx-auto   md:mx-5 sm:w-80  shadow-2xl rounded-lg shadow-yellow-900 my-20 py-5 bg-primary"
         >
           {/* Card Image */}
           <div className="m-5">
@@ -97,7 +102,7 @@ export default function ProjectCard() {
           <Button className="lg:text-[14px] border-black border-2 p-2 bg-white hover:shadow-lg hover:-translate-y-2 rounded-none sm:text-xs mx-5 px-5 ">
             {button}
           </Button>
-        </div>
+        </motion.div>
       ))}
     </section>
   );

@@ -13,9 +13,9 @@ const MyImage: React.FC = () => {
   return (
     <div>
       <motion.div
-        initial={{ opacity: 0, y: -50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 0.5 }}
+        whileInView={{ scale: 1.05, opacity: 1, y: 0 }}
+        initial={{ scale: 0.5, opacity: 0, y: 50 }}
         className="my-5 sm:hidden md:hidden"
       >
         <AvatarGroup isBordered max={3} size="lg">
@@ -29,9 +29,9 @@ const MyImage: React.FC = () => {
       </motion.div>
       {/* small screen */}
       <motion.div
-        initial={{ opacity: 0, y: -50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 0.5 }}
+        whileInView={{ scale: 1.05, opacity: 1, y: 0 }}
+        initial={{ scale: 0.5, opacity: 0, y: 50 }}
         className="sm:my-5 lg:hidden"
       >
         <AvatarGroup isBordered max={3}>

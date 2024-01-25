@@ -4,6 +4,7 @@ import Navbar from "../components/Homepage/Navbar";
 import Header from "../about/header";
 import { Button } from "@nextui-org/react";
 import ProjectCard from "./Card";
+import Link from "next/link";
 
 export default function Projects() {
   return (
@@ -35,9 +36,11 @@ export default function Projects() {
               </div>
               <div>
                 {/* Discover Button */}
-                <Button className="lg:text-[14px] border-black border-2 p-2 md:hidden sm:hidden bg-white hover:shadow-lg hover:-translate-y-2 rounded-none sm:text-xs ">
-                  Discover More
-                </Button>
+                <Link href="https://github.com/datharnu">
+                  <Button className="lg:text-[14px] border-black border-2 p-2 md:hidden sm:hidden bg-white hover:shadow-lg hover:-translate-y-2 rounded-none sm:text-xs ">
+                    Discover More
+                  </Button>
+                </Link>
               </div>
             </div>
             {/* Project Card */}

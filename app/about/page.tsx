@@ -83,95 +83,82 @@ export default function About() {
                 <h1>DAISYUI</h1> */}
 
               <Progress
-                isIndeterminate
                 label="HTML"
                 color="danger"
                 aria-label="Loading..."
-                value={70}
+                value={100}
               />
               <Progress
-                isIndeterminate
                 label="CSS"
                 color="primary"
                 aria-label="Loading..."
-                value={70}
+                value={80}
               />
               <Progress
-                isIndeterminate
                 label="TAILWIND CSS"
                 color="secondary"
                 aria-label="Loading..."
-                value={70}
+                value={90}
               />
               <Progress
-                isIndeterminate
                 label="NEXT.JS"
                 color="success"
                 aria-label="Loading..."
-                value={70}
+                value={90}
               />
               <Progress
-                isIndeterminate
                 label="REACT"
                 color="warning"
                 aria-label="Loading..."
-                value={70}
+                value={80}
               />
               <Progress
-                isIndeterminate
                 label="FRAMER MOTION"
                 color="primary"
                 aria-label="Loading..."
                 value={70}
               />
               <Progress
-                isIndeterminate
                 label="MUI"
                 color="danger"
                 aria-label="Loading..."
-                value={70}
+                value={60}
               />
               <Progress
-                isIndeterminate
                 label="GITHUB"
                 color="primary"
                 aria-label="Loading..."
-                value={70}
+                value={100}
               />
               <Progress
-                isIndeterminate
                 label="HTML5"
                 color="warning"
                 aria-label="Loading..."
-                value={70}
+                value={100}
               />
               <Progress
-                isIndeterminate
                 label="NEXTUI"
                 color="success"
                 aria-label="Loading..."
-                value={70}
+                value={80}
               />
               <Progress
-                isIndeterminate
                 label="DAISYUI"
                 color="secondary"
                 aria-label="Loading..."
-                value={70}
+                value={80}
               />
               <Progress
-                isIndeterminate
                 label="CONTENTFUL"
                 color="primary"
                 aria-label="Loading..."
                 value={70}
               />
               <Progress
-                isIndeterminate
                 label="VUEJS"
                 color="danger"
                 aria-label="Loading..."
-                value={20}
+                value={50}
               />
             </div>
           </div>

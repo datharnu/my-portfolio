@@ -39,7 +39,7 @@ const MyImage: React.FC<ImageProps> = ({ imageSrc, width }) => {
         <NextImage
           src={imageSrc}
           alt=""
-          className="w-full  h-[17rem] sm:h-[10rem] object-cover       "
+          className="w-full md:h-[13rem] h-[16rem] sm:h-[10rem] object-cover       "
           onLoad={() => setIsLoaded(true)}
         />
       </motion.div>

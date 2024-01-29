@@ -7,7 +7,7 @@ import Frame12 from "../../public/Frame 12.png";
 
 import Header from "./header";
 import { motion } from "framer-motion";
-import { Button } from "@nextui-org/react";
+import { Button, ul } from "@nextui-org/react";
 import { Progress } from "@nextui-org/react";
 
 import Portfolio from "./Portfolio";
@@ -47,119 +47,47 @@ export default function About() {
           </div>
         </div>
         {/* Skills */}
-        <article>
-          <div className="lg:flex " style={{ backgroundColor: "#5D5555" }}>
-            <div className="text-center text-white my-auto mx-auto border-black border-4 lg:p-10 rounded-b-3xl sm:border-none md:border-none sm:relative sm:mx-12  sm:px-5 md:py-5  sm:py-4 ">
-              <h1 className="play lg:text-[40px] md:text-[35px] sm:text-[24px] ">
-                Skills
-              </h1>
-              <div className=" lg:text-[16px] open font-light sm:text-sm sm:fill-content3-foreground ">
-                <p>We'd love to hear from you! Whether you have questions,</p>
-                <p>
-                  suggestions, or just want to say hello, drop us a line. Your
-                  feedback
-                </p>
-                <p>
-                  is the secret sauce that makes our site awesome. Can't wait to
-                </p>
-                connect!
+        <article className=" ">
+          <div className="  " style={{ backgroundColor: "#5D5555" }}>
+            <div className="lg:mx-[150px]  lg:flex py-10 lg:py-44 lg:gap-10  ">
+              <div className="text-center text-white my-auto mx-auto border-black border-4 lg:p-10 rounded-b-3xl sm:border-none md:border-none sm:relative sm:mx-12  sm:px-5 md:py-5  sm:py-4 ">
+                <h1 className="play lg:text-[40px] md:text-[35px] sm:text-[24px] ">
+                  Current Skills
+                </h1>
+                <div className=" lg:text-[16px] open font-light sm:text-sm sm:fill-content3-foreground ">
+                  <p>We'd love to hear from you! Whether you have questions,</p>
+                  <p>
+                    suggestions, or just want to say hello, drop us a line. Your
+                    feedback
+                  </p>
+                  <p>
+                    is the secret sauce that makes our site awesome. Can't wait
+                    to
+                  </p>
+                  connect!
+                </div>
               </div>
-            </div>
 
-            {/* portfolio */}
-            <div className="text-white flex flex-col  mt-10 font-bold gap-5 w-full max-w-md mx-auto my-10 sm:px-10 sm:gap-2 sm:pb-10 md:gap-2 md:pb-14">
-              {/* <h1>HTML</h1>
-                <h1>CSS</h1>
-                <h1>TAILWIND CSS</h1>
-                <h1>NEXT.JS</h1>
-                <h1>REACT</h1>
-                <h1>TYPESCRIPT</h1>
-                <h1>JAVASCRIPT</h1>
-                <h1>FRAMER MOTION</h1>
-                <h1>MUI</h1>
-                <h1>GITHUB</h1>
-                <h1>HTML5</h1>
-                <h1>NEXTUI</h1>
-                <h1>DAISYUI</h1> */}
-
-              <Progress
-                label="HTML"
-                color="danger"
-                aria-label="Loading..."
-                value={100}
-              />
-              <Progress
-                label="CSS"
-                color="primary"
-                aria-label="Loading..."
-                value={80}
-              />
-              <Progress
-                label="TAILWIND CSS"
-                color="secondary"
-                aria-label="Loading..."
-                value={90}
-              />
-              <Progress
-                label="NEXT.JS"
-                color="success"
-                aria-label="Loading..."
-                value={90}
-              />
-              <Progress
-                label="REACT"
-                color="warning"
-                aria-label="Loading..."
-                value={80}
-              />
-              <Progress
-                label="FRAMER MOTION"
-                color="primary"
-                aria-label="Loading..."
-                value={70}
-              />
-              <Progress
-                label="MUI"
-                color="danger"
-                aria-label="Loading..."
-                value={60}
-              />
-              <Progress
-                label="GITHUB"
-                color="primary"
-                aria-label="Loading..."
-                value={100}
-              />
-              <Progress
-                label="HTML5"
-                color="warning"
-                aria-label="Loading..."
-                value={100}
-              />
-              <Progress
-                label="NEXTUI"
-                color="success"
-                aria-label="Loading..."
-                value={80}
-              />
-              <Progress
-                label="DAISYUI"
-                color="secondary"
-                aria-label="Loading..."
-                value={80}
-              />
-              <Progress
-                label="CONTENTFUL"
-                color="primary"
-                aria-label="Loading..."
-                value={70}
-              />
-              <Progress
-                label="VUEJS"
-                color="danger"
-                aria-label="Loading..."
-                value={50}
-              />
+              {/* portfolio */}
+              <div className="text-black font-semibold lg:text-lg sm:text-sm my-10 lg:w-[47%] ">
+                <ul className="flex flex-wrap gap-[1rem] mx-2  justify-center ">
+                  <li className="bg-pink-600 rounded-sm p-2">HTML</li>
+                  <li className="bg-gray-400 rounded-sm p-2">CSS</li>
+                  <li className="bg-yellow-700 rounded-sm p-2">Tailwind CSS</li>
+                  <li className="bg-green-500 rounded-sm p-2">NEXTJS</li>
+                  <li className=" bg-amber-400 rounded-sm p-2">React</li>
+                  <li className="bg-gray-400  rounded-sm p-2">Framer Motion</li>
+                  <li className="bg-yellow-700 rounded-sm p-2">Typescript</li>
+                  <li className="bg-green-500 rounded-sm p-2">MUI</li>
+                  <li className="bg-pink-600 rounded-sm p-2">Javascript</li>
+                  <li className="bg-gray-400 rounded-sm p-2">Github</li>
+                  <li className="bg-amber-400 rounded-sm p-2">HTML5</li>
+                  <li className="bg-green-500 rounded-sm p-2">NEXTUI</li>
+                  <li className="bg-yellow-700 rounded-sm p-2">DAISYUI</li>
+                  <li className="bg-amber-400 rounded-sm p-2">Contentful</li>
+                  <li className="bg-pink-600 rounded-sm p-2">VUEJS</li>
+                </ul>
+              </div>
             </div>
           </div>
         </article>

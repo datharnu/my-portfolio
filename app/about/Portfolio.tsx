@@ -31,7 +31,7 @@ const PortfolioItem: React.FC<PortfolioItemProps> = ({
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <Image src={imageSrc} alt={alt} className="h-[25rem] object-contain" />
+      <Image src={imageSrc} alt={alt} className="h-[25rem] object-contain " />
       {isHovered && (
         <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
           <p className={`font-bold text-lg ${textColor}`}>{text}</p>

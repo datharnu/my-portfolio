@@ -97,7 +97,7 @@ export default function ProjectCard() {
           transition={{ duration: 0.5 }}
           whileInView={{ scale: 1.05, opacity: 1, y: 0 }}
           initial={{ scale: 0.5, opacity: 0, y: 50 }}
-          className="  mx-auto   md:mx-5 sm:w-80  shadow-2xl rounded-lg shadow-yellow-900 my-20 py-5 bg-primary"
+          className="  mx-auto   md:mx-5 sm:w-80  shadow-lg rounded-lg shadow-yellow-900 my-20 py-5 bg-primary"
         >
           {/* Card Image */}
           <div className="m-5">

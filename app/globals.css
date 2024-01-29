@@ -129,13 +129,13 @@ input {
 } */
 
 .play {
-  font-family: Playfair Display;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .aboutMe {
   color: #000;
   text-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
-  font-family: Playfair Display;
+  font-family: "PT Serif", serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;

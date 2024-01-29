@@ -30,7 +30,7 @@ export default function About() {
           </h1>
 
           <div className="lg:w-[50%] space-y-10 sm:mb-5 md:mb-7">
-            <p className="about-info lg:text-sm sm:text-xs md:font-semibold  mx-5 sm:font-semibold">
+            <p className="about-info lg:text-sm sm:text-sm md:font-semibold  mx-5 sm:font-semibold">
               I'm a frontend developer, the architect of the digital realm you
               see and interact with. My world revolves around crafting user
               interfaces, making sure they're not just functional but also look
@@ -50,26 +50,21 @@ export default function About() {
         <article className=" ">
           <div className="  " style={{ backgroundColor: "#5D5555" }}>
             <div className="lg:mx-[150px]  lg:flex py-10 lg:py-44 lg:gap-10  ">
-              <div className="text-center text-white my-auto mx-auto border-black border-4 lg:p-10 rounded-b-3xl sm:border-none md:border-none sm:relative sm:mx-12  sm:px-5 md:py-5  sm:py-4 ">
+              <div className="text-center text-white my-auto mx-auto border-black border-4 lg:w-[40%] lg:p-10 rounded-b-3xl sm:border-none md:border-none sm:relative sm:mx-12  sm:px-5 md:py-5  sm:py-4 ">
                 <h1 className="play lg:text-[40px] md:text-[35px] sm:text-[24px] ">
                   Current Skills
                 </h1>
                 <div className=" lg:text-[16px] open font-light sm:text-sm sm:fill-content3-foreground ">
-                  <p>We'd love to hear from you! Whether you have questions,</p>
-                  <p>
-                    suggestions, or just want to say hello, drop us a line. Your
-                    feedback
+                  <p className="md:mx-20">
+                    As a frontend developer, I specialize in crafting intuitive
+                    and dynamic user interfaces, combining my creativity with
+                    technical skills to bring designs to life.
                   </p>
-                  <p>
-                    is the secret sauce that makes our site awesome. Can't wait
-                    to
-                  </p>
-                  connect!
                 </div>
               </div>
 
               {/* portfolio */}
-              <div className="text-black font-semibold lg:text-lg sm:text-sm my-10 lg:w-[47%] ">
+              <div className="text-black font-semibold lg:text-lg sm:text-sm my-10 md:mx-16 lg:w-[47%] ">
                 <ul className="flex flex-wrap gap-[1rem] mx-2  justify-center ">
                   <li className="bg-pink-600 rounded-sm p-2">HTML</li>
                   <li className="bg-gray-400 rounded-sm p-2">CSS</li>

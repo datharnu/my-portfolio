@@ -7,7 +7,7 @@ import Frame12 from "../../public/Frame 12.png";
 
 import Header from "./header";
 import { motion } from "framer-motion";
-import { Button, ul } from "@nextui-org/react";
+import { Button } from "@nextui-org/react";
 import { Progress } from "@nextui-org/react";
 
 import Portfolio from "./Portfolio";

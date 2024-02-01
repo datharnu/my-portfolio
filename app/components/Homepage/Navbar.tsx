@@ -75,7 +75,7 @@ export default function Navbar() {
               borderRadius: ["20%", "20%", "50%", "20%"],
             }}
           >
-            <input type="checkbox" />
+            <input className="inner" type="checkbox" />
             <span className="click"></span>
             <span className="click"></span>
             <span className="click"></span>

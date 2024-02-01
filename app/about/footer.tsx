@@ -44,7 +44,6 @@ export default function Footer() {
           <Image src={copyright} alt="copyright" className="" />
           <p>2024 Emmanuel Odunayo Olagbemisoye. All Right Reserved.</p>
         </div>
-        <input type="text" placeholder="oduanayo" />
       </article>
     </section>
   );

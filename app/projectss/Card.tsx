@@ -13,6 +13,7 @@ import CardComponent from "../../public/Card Component.jpeg";
 import CarApp from "../../public/Car App.jpeg";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Dashboard from "../../public/Desktop - 9.png";
 
 interface cardsData {
   image: StaticImageData;
@@ -85,6 +86,14 @@ const cardsData = [
     button: "Live Preview",
     title: "CARD COMPONENT",
     link: "https://datharnu.github.io/frontend-mentor-commit/",
+  },
+
+  {
+    image: Dashboard,
+    info: "This is a dashboard of a crypto project showing what it looks like having a crypto dashboard",
+    button: "Live Preview",
+    title: "DASHBOARD",
+    link: "https://dashboard-delta-three-64.vercel.app/",
   },
 ];
 

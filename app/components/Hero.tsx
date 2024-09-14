@@ -4,7 +4,19 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { CircleArrowDown, Github, Linkedin, Mail } from "lucide-react";
 import Navbar from "./Navbar";
 
-const ScrollingText = ({ text, direction, size, className }: any) => {
+interface ScrollingTextProps {
+  text: string;
+  direction: "left" | "right";
+  size: string;
+  className?: string;
+}
+
+const ScrollingText: React.FC<ScrollingTextProps> = ({
+  text,
+  direction,
+  size,
+  className,
+}) => {
   return (
     <div className={`overflow-hidden whitespace-nowrap py-4 ${className}`}>
       <motion.div
@@ -28,7 +40,7 @@ const ScrollingText = ({ text, direction, size, className }: any) => {
   );
 };
 
-const Hero = () => {
+const Hero: React.FC = () => {
   const [typedText, setTypedText] = useState("");
   const fullText = "Frontend Developer";
 
@@ -53,13 +65,20 @@ const Hero = () => {
     return () => clearInterval(typingInterval);
   }, []);
 
+  const handleScrollDown = (): void => {
+    const aboutSection = document.getElementById("about");
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <motion.div
       className="bg-[#E8ECF2] min-h-screen flex flex-col justify-between px-4 overflow-hidden relative"
       style={{ backgroundColor }}
       id="hero"
     >
-      <div className=" lg:mx-20  z-20 flex flex-row justify-between items-center">
+      <div className="lg:mx-20 z-20 flex flex-row justify-between items-center">
         <div>
           <Navbar />
         </div>
@@ -72,7 +91,7 @@ const Hero = () => {
         >
           <a
             href="#contact"
-            className="bg-[#7C7FEE] text-white px-8 py-3 rounded-full font-semibold text-lg hover:bg-[#7C7FEE]/90 transition duration-300"
+            className="bg-[#7C7FEE] text-white px-8 py-3 rounded-full font-semibold text-sm lg:text-lg hover:bg-[#7C7FEE]/90 transition duration-300"
           >
             Let&apos;s Connect
           </a>
@@ -144,18 +163,7 @@ const Hero = () => {
             </div>
           </motion.div>
         </div>
-        <div>
-          <CircleArrowDown size={24} />
-        </div>
       </div>
-
-      {/* <Image
-        src={coper}
-        width={200}
-        height={200}
-        alt="coper"
-        className="absolute bottom-0 right-20"
-      /> */}
 
       <ScrollingText
         text="Crafting User-Centric Designs for the Modern Web"
@@ -170,6 +178,19 @@ const Hero = () => {
         size="text-[13rem]"
         className="absolute bottom-0 left-0 right-0"
       />
+      <div className="absolute bottom-10 left-1/2 -translate-x-1/2">
+        <div className="relative">
+          <div className="absolute inset-0 rounded-full animate-ping bg-[#7C7FEE] opacity-75"></div>
+          <div className="relative rounded-full p-2 bg-white">
+            <CircleArrowDown
+              size={24}
+              onClick={handleScrollDown}
+              style={{ cursor: "pointer" }}
+              color="#7C7FEE"
+            />
+          </div>
+        </div>
+      </div>
     </motion.div>
   );
 };

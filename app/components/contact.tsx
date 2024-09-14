@@ -2,8 +2,8 @@ import React from "react";
 
 const ContactSection = () => {
   return (
-    <div className=" bg-gray-100 py-20  ">
-      <div className="  relative text-center p-20   rounded-lg animate-modal-appear overflow-hidden bg-white max-w-lg mx-auto">
+    <div className=" bg-gray-100 py-20  " id="contact">
+      <div className="  relative text-center p-20  mx-5 lg:mx-auto  rounded-lg animate-modal-appear overflow-hidden bg-white max-w-lg ">
         <h1 className=" lg:text-6xl text-4xl font-bold mb-8">
           Contact<span className="text-blue-500">.</span>
         </h1>
@@ -35,7 +35,7 @@ const ContactSection = () => {
           </svg>
           <a
             href="mailto:olagbemisoyee@gmail.com"
-            className="text-xl hover:underline"
+            className="text-xl hover:underline font-semibold"
           >
             olagbemisoyee@gmail.com
           </a>

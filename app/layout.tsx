@@ -1,9 +1,15 @@
 import type { Metadata } from "next";
-import { Open_Sans } from "next/font/google";
+import { Anton, Open_Sans, Archivo_Black } from "next/font/google";
 import "./globals.css";
-import Providers from "./components/Homepage/UIProvider";
 
 const inter = Open_Sans({ subsets: ["latin"] });
+
+const anton = Archivo_Black({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-anton",
+  weight: "400",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,10 +22,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        <Providers>{children}</Providers>
-      </body>
+    <html lang="en" className={`${anton.variable}`}>
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }

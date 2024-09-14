@@ -178,7 +178,7 @@ const Hero: React.FC = () => {
         size="text-[13rem]"
         className="absolute bottom-0 left-0 right-0"
       />
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2">
+      <div className="absolute bottom-24 lg:bottom-10 left-1/2 -translate-x-1/2">
         <div className="relative">
           <div className="absolute inset-0 rounded-full animate-ping bg-[#7C7FEE] opacity-75"></div>
           <div className="relative rounded-full p-2 bg-white">

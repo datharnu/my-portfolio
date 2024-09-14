@@ -237,7 +237,7 @@ const BouncyCardsFeatures: React.FC = () => {
               </div>
             </div>
             <p className="text-sm">
-              It's a waitlist i literally made using React and Tailwind,
+              It&rsquo;s a waitlist i literally made using React and Tailwind,
               designed and built on my own
               <span className="itmes-center gap-2 text-white font-semibold text-sm hover:text-blue-400">
                 {" "}

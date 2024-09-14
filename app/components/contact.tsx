@@ -16,7 +16,7 @@ const ContactSection = () => {
           <a href="#" className="text-blue-400 hover:underline">
             Twitter
           </a>{" "}
-          if that's more your speed.
+          if that&rsquo;s more your speed.
         </p>
         <div className="flex items-center justify-center">
           <svg

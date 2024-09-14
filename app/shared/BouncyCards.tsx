@@ -37,7 +37,7 @@ const ProjectModal: React.FC<Project> = ({
     <DialogTrigger className="text-white font-semibold text-sm hover:text-blue-400">
       Learn more...
     </DialogTrigger>
-    <DialogContent className="sm:max-w-[425px]">
+    <DialogContent className="lg:max-w-[425px] max-w-[380px]">
       <DialogHeader>
         <DialogTitle>{title}</DialogTitle>
       </DialogHeader>

@@ -152,15 +152,23 @@ const About: React.FC = () => {
             visible: { opacity: 1, y: 0 },
           }}
           transition={{ delay: 1.3, duration: 0.5 }}
-          className="flex space-x-6"
+          className="flex gap-2 "
         >
-          <p className="flex items-center gap-2">
-            My links <CircleChevronRight size={13} />{" "}
-          </p>
-          <SocialLink href="#" icon={<Linkedin size={20} />} />
-          <SocialLink href="#" icon={<Github size={20} />} />
+          <p className="flex mr-2">My links:</p>
+
+          <SocialLink
+            href="https://www.linkedin.com/in/emmanuelolagbemi/"
+            icon={<Linkedin size={20} />}
+          />
+          <SocialLink
+            href="https://github.com/datharnu"
+            icon={<Github size={20} />}
+          />
           <SocialLink href="#" icon={<Twitter size={20} />} />
-          <SocialLink href="#" icon={<Link size={20} />} />
+          <SocialLink
+            href="https://my-portfolio-iota-navy-23.vercel.app/"
+            icon={<Link size={20} />}
+          />
         </motion.div>
       </div>
     </motion.div>

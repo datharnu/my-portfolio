@@ -7,7 +7,7 @@ const ContactSection = () => {
         <h1 className=" lg:text-6xl text-4xl font-bold mb-8">
           Contact<span className="text-blue-500">.</span>
         </h1>
-        <p className="mb-4">
+        <p className="mb-4 lg:text-md text-xs">
           Shoot me an email if you want to connect! You can also find me on{" "}
           <a href="#" className="text-blue-400 hover:underline">
             Linkedin
@@ -35,7 +35,7 @@ const ContactSection = () => {
           </svg>
           <a
             href="mailto:olagbemisoyee@gmail.com"
-            className="text-xl hover:underline font-semibold"
+            className="lg:text-xl text-sm hover:underline font-semibold"
           >
             olagbemisoyee@gmail.com
           </a>

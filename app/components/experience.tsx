@@ -126,7 +126,7 @@ const ExperienceSection = () => {
       ],
     },
     {
-      company: "Facebook",
+      company: "Reftek",
       role: "Software Engineer",
       period: "2020 - Present",
       location: "Lagos",

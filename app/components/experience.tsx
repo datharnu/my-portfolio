@@ -126,7 +126,7 @@ const ExperienceSection = () => {
       ],
     },
     {
-      company: "Reftek",
+      company: "Reftek Consulting",
       role: "Software Engineer",
       period: "2020 - Present",
       location: "Lagos",

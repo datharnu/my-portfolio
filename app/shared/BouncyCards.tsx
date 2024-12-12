@@ -8,6 +8,7 @@ import Joblisting from "../../public/joblisting.webp";
 import IpAdress from "../../public/Ip Address Tracker.webp";
 import Dashboard from "../../public/dashboard.png";
 import Waitlist from "../../public/waitlist.png";
+import Beeface from "../../public/Beeface.webp";
 import { ArrowRight, Github, SquareArrowOutUpRight } from "lucide-react";
 import {
   Dialog,
@@ -22,7 +23,7 @@ interface Project {
   image: StaticImageData;
   description: string;
   techStack: string;
-  githubLink: string;
+  githubLink?: string;
   liveLink: string;
 }
 const ProjectModal: React.FC<Project> = ({
@@ -254,6 +255,39 @@ const BouncyCardsFeatures: React.FC = () => {
           </div>
         </BounceCard>
       </div>
+
+      <BounceCard className="col-span-12 md:col-span-4 h-4 mt-10">
+        <Image src={Beeface} alt="Chowdeck" className="w-full " />
+        <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-gradient-to-br from-pink-400 to-red-400 p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
+          <div className="flex items-center justify-between">
+            <span className="block text-lg font-bold text-indigo-50">
+              Beefcake Swimwear{" "}
+              <span className="font-semibold text-[14px]">
+                [ Liquid - TailwindCSS - Javascript/ES6 - Shopify GraphQL API ]
+              </span>
+            </span>
+            <div className="flex items-center gap-2">
+              <a href="https://beefcakeswimwear.com">
+                <SquareArrowOutUpRight className="w-4 text-white hover:text-blue-400" />
+              </a>
+            </div>
+          </div>
+          <p className="text-sm">
+            This is a live Shopify store for buying of swimming suits and
+            accessories
+            <span className="itmes-center gap-2 text-white font-semibold text-sm hover:text-blue-400">
+              {" "}
+              <ProjectModal
+                title="Beefcake Swimwear"
+                image={Beeface}
+                description="Designed and developed a Shopify Store for buying of swimming suits and simming accessories which entails me working on reuseable components and implementing responsive design. "
+                techStack="[ Liquid - TailwindCSS - Javascript/ES6  - Shopify GraphQL API ]"
+                liveLink="https://beefcakeswimwear.com"
+              />
+            </span>
+          </p>
+        </div>
+      </BounceCard>
     </section>
   );
 };

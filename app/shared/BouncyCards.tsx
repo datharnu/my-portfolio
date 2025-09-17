@@ -69,38 +69,37 @@ const BouncyCardsFeatures: React.FC = () => {
         <ClientButton />
       </div>
       <div className="mb-4 grid grid-cols-12 gap-7 my-20 lg:flex lg:w-full ">
-        <BounceCard className="col-span-12 md:col-span-4 lg:w-1/2 h-4">
-          {/* <CardTitle>Do a thing</CardTitle> */}
-          <Image src={Chowdeck} alt="Chowdeck" className="w-full " />
-          <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-gradient-to-br from-violet-400 to-indigo-400 p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
+        <BounceCard className="col-span-12 md:col-span-8 h-4 lg:w-1/2  ">
+          <Image src={Waitlist} alt="Chowdeck" className="w-full " />
+          <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl  bg-gradient-to-br from-blue-400 to-cyan-400 p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
             <div className="flex items-center justify-between">
               <span className="block text-lg font-bold text-indigo-50">
-                Chowdeck{" "}
+                Waitlist{" "}
                 <span className="font-semibold text-[14px]">
-                  [ NextJs - DaisyUi - Typescript - Tailwind ]
+                  [ React - Tailwind - Typescript ]
                 </span>
               </span>
               <div className="flex items-center gap-2">
-                <a href="https://github.com/datharnu/Chowdeck">
+                <a href="">
                   <Github className="w-4 text-white  hover:text-blue-400" />
                 </a>{" "}
-                <a href="https://chowdeck-alpha.vercel.app/">
+                <a href="www.rentville.ng">
                   <SquareArrowOutUpRight className="w-4 text-white hover:text-blue-400" />
                 </a>
               </div>
             </div>
             <p className="text-sm">
-              A website that helps with logistics for food delivery, it
-              basically connects with the restaurant.
+              It&rsquo;s a waitlist i literally made using React and Tailwind,
+              designed and built on my own
               <span className="itmes-center gap-2 text-white font-semibold text-sm hover:text-blue-400">
                 {" "}
                 <ProjectModal
-                  title="Chowdeck"
-                  image={Chowdeck}
-                  description="Developed a web platform that streamlines food delivery logistics by connecting restaurants with delivery services. The site features real-time order tracking, dynamic menu management, and an intuitive interface for customers and delivery drivers. Key frontend highlights include responsive design, interactive elements, and seamless integration of payment and communication features. This project showcases my skills in creating user-centric, efficient, and scalable web applications."
-                  techStack="NextJs - DaisyUi - Typescript - Tailwind"
-                  githubLink="https://github.com/datharnu/Chowdeck"
-                  liveLink="https://chowdeck-alpha.vercel.app/"
+                  title="Waitlist"
+                  image={Waitlist}
+                  description="Designed and developed a waitlist application using React and Tailwind CSS. The app features a clean, responsive design and provides a user-friendly interface for managing and tracking waitlist entries. This project demonstrates my ability to create visually appealing, functional applications independently while leveraging React for interactive components and Tailwind CSS for efficient styling"
+                  techStack="[ React - Tailwind - Typescript ]"
+                  githubLink="https://github.com/datharnu/Rentville-waitlist"
+                  liveLink="https://rentville-waitlist.vercel.app/"
                 />
               </span>
             </p>
@@ -218,37 +217,39 @@ const BouncyCardsFeatures: React.FC = () => {
           </div>
         </BounceCard>
 
-        <BounceCard className="col-span-12 md:col-span-8 h-4 lg:w-1/2  ">
-          <Image src={Waitlist} alt="Chowdeck" className="w-full " />
-          <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl  bg-gradient-to-br from-blue-400 to-cyan-400 p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
+        {/* Chow deck should be here  */}
+        <BounceCard className="col-span-12 md:col-span-4 lg:w-1/2 h-4">
+          {/* <CardTitle>Do a thing</CardTitle> */}
+          <Image src={Chowdeck} alt="Chowdeck" className="w-full " />
+          <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-gradient-to-br from-violet-400 to-indigo-400 p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
             <div className="flex items-center justify-between">
               <span className="block text-lg font-bold text-indigo-50">
-                Waitlist{" "}
+                Chowdeck{" "}
                 <span className="font-semibold text-[14px]">
-                  [ React - Tailwind - Typescript ]
+                  [ NextJs - DaisyUi - Typescript - Tailwind ]
                 </span>
               </span>
               <div className="flex items-center gap-2">
-                <a href="https://github.com/datharnu/Rentville-waitlist">
+                <a href="https://github.com/datharnu/Chowdeck">
                   <Github className="w-4 text-white  hover:text-blue-400" />
                 </a>{" "}
-                <a href="https://rentville-waitlist.vercel.app/">
+                <a href="https://chowdeck-alpha.vercel.app/">
                   <SquareArrowOutUpRight className="w-4 text-white hover:text-blue-400" />
                 </a>
               </div>
             </div>
             <p className="text-sm">
-              It&rsquo;s a waitlist i literally made using React and Tailwind,
-              designed and built on my own
+              A website that helps with logistics for food delivery, it
+              basically connects with the restaurant.
               <span className="itmes-center gap-2 text-white font-semibold text-sm hover:text-blue-400">
                 {" "}
                 <ProjectModal
-                  title="Waitlist"
-                  image={Waitlist}
-                  description="Designed and developed a waitlist application using React and Tailwind CSS. The app features a clean, responsive design and provides a user-friendly interface for managing and tracking waitlist entries. This project demonstrates my ability to create visually appealing, functional applications independently while leveraging React for interactive components and Tailwind CSS for efficient styling"
-                  techStack="[ React - Tailwind - Typescript ]"
-                  githubLink="https://github.com/datharnu/Rentville-waitlist"
-                  liveLink="https://rentville-waitlist.vercel.app/"
+                  title="Chowdeck"
+                  image={Chowdeck}
+                  description="Developed a web platform that streamlines food delivery logistics by connecting restaurants with delivery services. The site features real-time order tracking, dynamic menu management, and an intuitive interface for customers and delivery drivers. Key frontend highlights include responsive design, interactive elements, and seamless integration of payment and communication features. This project showcases my skills in creating user-centric, efficient, and scalable web applications."
+                  techStack="NextJs - DaisyUi - Typescript - Tailwind"
+                  githubLink="https://github.com/datharnu/Chowdeck"
+                  liveLink="https://chowdeck-alpha.vercel.app/"
                 />
               </span>
             </p>

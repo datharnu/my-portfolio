@@ -83,7 +83,7 @@ const BouncyCardsFeatures: React.FC = () => {
                 <a href="">
                   <Github className="w-4 text-white  hover:text-blue-400" />
                 </a>{" "}
-                <a href="www.rentville.ng">
+                <a href="https://rconnect.rentville.ng/">
                   <SquareArrowOutUpRight className="w-4 text-white hover:text-blue-400" />
                 </a>
               </div>

@@ -456,7 +456,7 @@ const BouncyCardsFeatures: React.FC = () => {
 
       <BounceCard className="col-span-12 md:col-span-4 h-4 mt-10">
         <video
-          src="/taskmart1.mp4"
+          src="https://github.com/user-attachments/assets/78cea2a3-2b3c-4ee1-b9c7-4cff2a7f047f"
           loop
           muted
           autoPlay
@@ -477,7 +477,7 @@ const BouncyCardsFeatures: React.FC = () => {
               {" "}
               <ProjectModal
                 title="TaskMart"
-                videoSrc="/taskmart1.mp4"
+                videoSrc="https://github.com/user-attachments/assets/78cea2a3-2b3c-4ee1-b9c7-4cff2a7f047f"
                 description="TaskMart is a comprehensive mobile application that serves as a marketplace for all kinds of jobs, whether white-collar or blue-collar tasks. It also features a 'Mart' section for decluttering and selling items. The platform incorporates an escrow payment system to ensure secure transactions between users."
                 techStack="[ Mobile App - React Native - Typescript ]"
               />

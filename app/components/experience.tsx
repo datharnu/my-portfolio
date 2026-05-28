@@ -107,24 +107,29 @@ const ExperienceSection = () => {
   );
 
   const experiences = [
-    {
-      company: "Wema Bank",
-      role: "Software Engineer",
-      period: "2022 - 2023",
-      location: "Lagos",
-      description:
-        "I help build and scale a new platform for our customers. Increased output of our primary services by 70%. Intigrated backend service from NodeJs. Also helped make it look prettier.",
-      skills: [
-        "React",
-        "NodeJs",
-        "Tailwind",
-        "Git",
-        "GitHub",
-        "React Native",
-        "Expo",
-        "Shadcn",
-      ],
-    },
+{
+  company: "Lootory",
+  role: "Software Engineer",
+  period: "2025 - Present",
+  location: "Latvia",
+  description:
+    "Developed and maintained the Lootory Telegram mini app, enabling users to complete social tasks, earn rewards, connect wallets, and engage with the platform directly within Telegram. Built scalable frontend interfaces and backend services, implemented wallet integration, task and reward systems, referral features, and optimized the app for seamless mobile user experience and real-time interactions.",
+  skills: [
+    "Next.js",
+    "React",
+    "TypeScript",
+    "Node.js",
+    "Express",
+    "MySQL",
+    "Telegram Mini Apps",
+    "Web3",
+    "Tailwind CSS",
+    "Shadcn UI",
+    "REST APIs",
+    "Git",
+    "GitHub",
+  ],
+},
     {
       company: "Reftek Consulting",
       role: "Fullstack Engineer",

@@ -299,7 +299,7 @@ import React from "react";
 import ClientButton from "./ClientButton";
 import BounceCard from "./BounceCard";
 import CardTitle from "./CardTitle";
-import Boots from "../../public/boots.png";
+import Boots from "../../public/telegram.png";
 import Image, { StaticImageData } from "next/image";
 import Joblisting from "../../public/joblisting.webp";
 import IpAdress from "../../public/Ip Address Tracker.webp";
@@ -430,7 +430,7 @@ const BouncyCardsFeatures: React.FC = () => {
                 <a href="https://github.com/datharnu/job-filter">
                   <Github className="w-4 text-white  hover:text-blue-400" />
                 </a>{" "}
-                <a href="https://jobfil.netlify.app/">
+                <a href="https://job-filter-fawn.vercel.app/">
                   <SquareArrowOutUpRight className="w-4 text-white hover:text-blue-400" />
                 </a>
               </div>
@@ -500,7 +500,7 @@ const BouncyCardsFeatures: React.FC = () => {
                 <a href="https://github.com/datharnu/IpAddress--Tracker">
                   <Github className="w-4 text-white  hover:text-blue-400" />
                 </a>{" "}
-                <a href="https://ipaddresstracke.netlify.app/">
+                <a href="https://ip-address-tracker-one-sage.vercel.app/">
                   <SquareArrowOutUpRight className="w-4 text-white hover:text-blue-400" />
                 </a>
               </div>
@@ -530,31 +530,31 @@ const BouncyCardsFeatures: React.FC = () => {
           <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-gradient-to-br from-violet-400 to-indigo-400 p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
             <div className="flex items-center justify-between">
               <span className="block text-lg font-bold text-indigo-50">
-                Boots and More{" "}
+                Lootory{" "}
                 <span className="font-semibold text-[14px]">
-                  [ NextJs - DaisyUi - Typescript - Tailwind ]
+                  [ NextJs - NodeJs - Typescript - MySQL - Tailwind ]
                 </span>
               </span>
               <div className="flex items-center gap-2">
                 <a href="">
                   <Github className="w-4 text-white  hover:text-blue-400" />
                 </a>{" "}
-                <a href="https://bootsandmore.netlify.app">
+                <a href="https://lootory-telegram-app.vercel.app/">
                   <SquareArrowOutUpRight className="w-4 text-white hover:text-blue-400" />
                 </a>
               </div>
             </div>
             <p className="text-sm">
-              A ecommerce website for buying boots and shoes of different kinds.
+             A Telegram mini app that allows users to complete social tasks, earn rewards, engage with the community.
               <span className="itmes-center gap-2 text-white font-semibold text-sm hover:text-blue-400">
                 {" "}
                 <ProjectModal
-                  title="Chowdeck"
+                  title="Lootory"
                   image={Boots}
-                  description="Developed a full-featured e-commerce platform that connects buyers with a wide range of products through a seamless and intuitive shopping experience. The site includes dynamic product management, secure checkout flows, responsive design, and real-time cart updates. Customers can easily browse categories, view product details, and complete purchases with integrated payment options. This project highlights my ability to build scalable, user-friendly web applications with smooth interactions, efficient navigation, and modern frontend functionality"
-                  techStack="NextJs - DaisyUi - Typescript - Tailwind"
+                  description="Developed a full-featured Telegram mini app for the Lootory ecosystem, enabling users to complete social and engagement tasks, earn rewards, connect wallets, and interact seamlessly within Telegram. Built both the frontend and backend systems, including task management, user authentication, reward tracking, wallet integration, referral systems, and responsive UI components optimized for mobile experience. Implemented secure APIs, real-time task updates, social engagement features, and scalable architecture to support an interactive web3 community platform. This project highlights my ability to build modern fullstack applications with smooth user experiences, efficient backend logic, and scalable web3-integrated functionality."
+                  techStack="NextJs - NodeJs - Typescript - MySQL - Tailwind"
                   githubLink=""
-                  liveLink="https://bootsandmore.netlify.app"
+                  liveLink=""
                 />
               </span>
             </p>

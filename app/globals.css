@@ -8,7 +8,10 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-color: #fefbf5; */
+  color: #DADADA;
 }
+
+
 
 @layer base {
   :root {

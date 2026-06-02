@@ -10,20 +10,13 @@ const config: Config = {
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-  	screens: {
-  		sm: {
-  			min: '320px',
-  			max: '767px'
-  		},
-  		md: {
-  			min: '768px',
-  			max: '1023px'
-  		},
-  		lg: {
-  			min: '1024px',
-  			max: '2560px'
-  		}
-  	},
+	screens: {
+		sm: '640px',
+		md: '768px',
+		lg: '1024px',
+		xl: '1280px',
+		'2xl': '1536px',
+	  },
   	extend: {
   		backgroundImage: {
   			bgImg: 'url(/background.png)',
@@ -43,6 +36,8 @@ const config: Config = {
   			},
   			shad: '#5D5555',
   			footer: '#1C1817',
+			yellow: '#FFC918',
+			purple: '#9FA1F6',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
@@ -76,6 +71,10 @@ const config: Config = {
   				'5': 'hsl(var(--chart-5))'
   			}
   		},
+		  fontFamily: {
+			outfit: ['var(--font-outfit)'],
+			anton: ['var(--font-anton)'],
+		  },
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',

@@ -47,7 +47,6 @@ export default function Hero() {
     I bridge the gap between product thinking and engineering.
 From user-facing interfaces to the systems that power them,
 I build reliable, scalable products that people enjoy using.
-{/* I care deeply about performance, usability, and clean architecture. */}
     </p>
   </div>
 </div>
@@ -56,7 +55,7 @@ I build reliable, scalable products that people enjoy using.
 {/* About me  */}
 <section className='flex justify-center'>
 <div className='font-outfit  space-y-3 p-10 lg:p-0  lg:px-20 max-w-4xl  '>
-  <p className='text-[14px] lg:text-[16px] xl:text-[18px] font-medium tracking-[4px]'>I'm an Open Book</p>
+  <p className='text-[14px] lg:text-[16px] xl:text-[18px] font-medium tracking-[4px]'>I&apos;m an Open Book</p>
 <div className='uppercase lg:hidden text-5xl tracking-[5px] text-purple font-medium'>
 <h1>about</h1>
 <h1>me.</h1>
@@ -67,7 +66,7 @@ I build reliable, scalable products that people enjoy using.
 </div>
 
 <p className='text-[14px] md:text-[16px] lg:text-[14px] xl:text-[16px] leading-[28px] lg:leading-[30px]'>
-I’m a Fullstack Developer and Product Engineer passionate about building products that people love to use.
+I&apos;m a Fullstack Developer and Product Engineer passionate about building products that people love to use.
  From intuitive user interfaces to scalable backend systems, 
 I create digital experiences that combine thoughtful design, strong engineering, and real business value.
 As a founder and builder, I enjoy turning ideas into products, solving complex problems, 

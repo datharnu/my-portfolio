@@ -3,19 +3,19 @@ import React from 'react'
 
 export default function Navbar() {
   return (
-<section className='p-10 lg:py-12 lg:px-20'>
+<section className='pt-10 pb-5 md:px-10 md:pb-2 lg:py-12 lg:px-20 lg:pb-2'>
 <div className='flex flex-col md:flex-row lg:flex-row justify-between space-y-12 md:space-y-0 lg:space-y-0 items-center '>
       <div>
-     <Link href="/" className='text-[#DADADA] text-[26px] tracking-[10px] font-outfit'>
+     <Link href="/" className='text-[#DADADA] text-[25px] tracking-[10px] font-outfit'>
        <span className='text-[#FFC918]'>e</span>mmanuel
        </Link>
       </div>
 
       {/* NAV MENU */}
 <div className=''>
-  <ul className='uppercase tracking-[3px] font-outfit lg:font-medium text-xs lg:text-[16px] lg:tracking-[8px] flex flex-col md:flex-row lg:flex-row justify-between gap-5'>
+  <ul className='uppercase tracking-[4px] font-outfit  font-medium text-[12px] lg:text-[16px] lg:tracking-[8px] flex flex-col md:flex-row lg:flex-row justify-between gap-6'>
     <li className='hover:text-yellow'>
-      <a href='#'>my projects</a>
+      <a href='/my-projects'>my projects</a>
     </li>
     <li className='hover:text-yellow'>
       <a href='#'>about me </a>

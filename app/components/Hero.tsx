@@ -1,27 +1,47 @@
-import React from 'react'
-import Navbar from './Navbar'
+"use client"
+import React, { useEffect } from 'react'
 import Image from 'next/image'
 
 export default function Hero() {
+  useEffect(() => {
+    const hasPlayed = sessionStorage.getItem('hero-animated')
+    if (hasPlayed) {
+      // Remove animation classes so elements just appear instantly
+      document.querySelectorAll('.tracking-in-expand, .flicker-in-1 ')
+        .forEach(el => {
+          (el as HTMLElement).style.animation = 'none'
+          ;(el as HTMLElement).style.opacity = '1'
+        })
+      return
+    }
+    sessionStorage.setItem('hero-animated', 'true')
+  }, [])
   return (
     <div className='bg-[#181D22] min-h-screen pb-5 lg:pb-20'>
    
-      {/* Fullstack Developer */}
-      <div className='font-outfit text-center py-5 space-y-1 lg:space-y-2 lg:mt-2'>
-        <h1 className='text-xs md:text-sm lg:text-xl text-yellow tracking-[5px] md:tracking-[10px] lg:tracking-[14px] lg:font-medium'>FULLSTACK</h1>
-        <h2 className='text-4xl md:text-6xl lg:text-7xl text-purple font-medium tracking-[2px] lg:tracking-[5px]'>DEVELOPER</h2>
-        <p className='text-[12px] md:text-sm lg:text-xl text-yellow tracking-[10px] md:tracking-[20px] lg:tracking-[24px]  lg:font-medium'>BASED IN NIGERIA </p>
-      </div>
+
+{/* Fullstack Developer */}
+<div className='font-outfit text-center py-5 space-y-1 lg:space-y-2 lg:mt-2'>
+  <h1 className='text-xs md:text-sm lg:text-xl text-yellow tracking-[5px] md:tracking-[10px] lg:tracking-[14px] lg:font-medium tracking-in-expand'>
+    FULLSTACK
+  </h1>
+  <h2 className='text-4xl md:text-6xl lg:text-7xl text-purple font-medium tracking-[2px] lg:tracking-[5px] flicker-in-1 '>
+    DEVELOPER
+  </h2>
+  <p className='text-[12px] md:text-sm lg:text-xl text-yellow tracking-[10px] md:tracking-[20px] lg:tracking-[24px] lg:font-medium tracking-in-expand'>
+    BASED IN NIGERIA
+  </p>
+</div>
 
 <section className="p-10 lg:pt-28 lg:px-20 flex flex-col lg:flex-row lg:justify-between">
   {/* Skills */}
   <div className="uppercase font-outfit font-medium  text-[10px] md:text-[12px] lg:text-[14.5px] space-y-3 tracking-[2px] lg:tracking-[5px]">
-    <p>mobile developer</p>
-    <p>web development</p>
-    <p>frontend developer</p>
-    <p>backend developer</p>
-    <p>cms</p>
-    <p>design thinking</p>
+    <p className='tracking-in-expand'>mobile developer</p>
+    <p className='tracking-in-expand'>web development</p>
+    <p className='tracking-in-expand'>frontend developer</p>
+    <p className='tracking-in-expand'>backend developer</p>
+    <p className='tracking-in-expand'>cms</p>
+    <p className='tracking-in-expand'>design thinking</p>
   </div>
 
   {/* Image */}
@@ -31,7 +51,7 @@ export default function Hero() {
       width={400}
       height={500}
       alt="my-image"
-      className="w-[280px] md:w-[350px] lg:w-[350px] xl:w-[400px] h-auto object-cover"
+      className="w-[65%] md:w-[350px] lg:w-[350px] xl:w-[400px] h-auto object-cover wobble-hor-bottom"
       priority
     />
   </div>
@@ -39,7 +59,7 @@ export default function Hero() {
   {/* What I Do */}
 <div className='flex justify-center lg:justify-end lg:mt-28 xl:mt-36'>
 <div className="font-outfit md:max-w-[39em] lg:max-w-sm xl:max-w-md  pt-10">
-    <h1 className="uppercase text-yellow text-center text-lg lg:text-xl tracking-[5px] md:tracking-[8px] lg:tracking-[10px] mb-2">
+    <h1 className="uppercase text-yellow text-center text-lg lg:text-xl tracking-[5px] md:tracking-[8px] lg:tracking-[10px] mb-2 tracking-in-expand">
       Product Engineer
     </h1>
 
@@ -56,7 +76,7 @@ I build reliable, scalable products that people enjoy using.
 <section className='flex justify-center'>
 <div className='font-outfit  space-y-3 p-10 lg:p-0  lg:px-20 lg:max-w-4xl md:px-20  '>
   <p className='text-[14px] lg:text-[16px] xl:text-[20px] font-medium tracking-[4px]'>I&apos;m an Open Book</p>
-<div className='uppercase lg:hidden text-5xl tracking-[5px] text-purple font-medium'>
+<div className='uppercase lg:hidden text-5xl tracking-[5px] text-purple font-medium tracking-in-expand'>
 <h1>about</h1>
 <h1>me.</h1>
 </div>

@@ -8,7 +8,7 @@ export default function AboutPage() {
  <div className='bg-yellow  gap-5 text-[#181D22] px-10 pt-7 pb-5 lg:py-10 md:px-20 '>
 <div className='text-center space-y-2 lg:space-y-5'>
 <p className='text-[10.5px] md:text-lg lg:text-[20px]  tracking-[2px] lg:tracking-[4px] font-medium'>I&apos;m Emmanuel Olagbemisoye</p>
-<h1 className='text-[28px] uppercase md:text-[31.68px] lg:text-[40px] xl:text-6xl font-semibold tracking-[4px] xl:tracking-[10px] leading-[1.1] text-left lg:text-center lg:leading-0 '>A fullstack / product engineer </h1>
+<h1 className='text-[28px] uppercase md:text-[31.68px] lg:text-[40px] xl:text-6xl font-semibold tracking-[4px] xl:tracking-[10px] leading-[1.1] text-left lg:text-center lg:leading-0 tracking-in-expand'>A fullstack / product engineer </h1>
 </div>
 <div className='flex justify-end mt-4 mr-10 md:ml-64 md:mt-2 md:justify-center'>
 <Image src={"/arrow.png"} alt='arrow' width={69} height={69} className='size-6 md:size-7 lg:size-14 ' />
@@ -19,11 +19,11 @@ export default function AboutPage() {
 <section className='px-8 md:px-16  lg:flex items-center lg:pt-28 xl:px-24  '>
     {/* Image */}
     <div className='flex justify-center pb-10 pt-5 lg:w-[40%]'>
-    <Image src='/my-image.png' alt="my-image" className='w-[65vw] md:max-w-[50vw] lg:max-w-[35vw] xl:max-w-[25vw]' width={718} height={959}/>
+    <Image src='/my-image.png' alt="my-image" className='w-[65%] md:max-w-[50vw] lg:max-w-[35vw] xl:max-w-[25vw] wobble-hor-bottom ' width={718} height={959}/>
     </div>
     {/* About info */}
     <div className='lg:w-[60%]'>
-        <h1 className='text-[31.68px] md:text-[42.24px] lg:text-[42.24px] lg:text-left uppercase font-medium text-center text-purple tracking-[3px] pb-5 '>About me.</h1>
+        <h1 className='text-[31.68px] md:text-[42.24px] lg:text-[42.24px] lg:text-left uppercase font-medium text-center text-purple tracking-[3px] pb-5 tracking-in-expand'>About me.</h1>
   <div className='text-[14px] text-[16px] leading-[1.8] space-y-2 mb-20'>
   <p >
   Some people find their way into tech through textbooks and classrooms. I found mine through a friend.

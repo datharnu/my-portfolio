@@ -19,7 +19,7 @@ export default function AboutPage() {
       <div className='bg-yellow gap-5 text-[#181D22] px-10 pt-7 pb-5 lg:py-10 md:px-20'>
         <div className='text-center space-y-2 lg:space-y-5'>
           <p className='text-[10.5px] md:text-lg lg:text-[20px] tracking-[2px] lg:tracking-[4px] font-medium'>Love to hear from you</p>
-          <h1 className='text-[28px] uppercase md:text-[31.68px] lg:text-[40px] xl:text-6xl font-semibold tracking-[4px] xl:tracking-[10px] leading-[1.1] text-center lg:leading-0'>Hire me</h1>
+          <h1 className='text-[28px] uppercase md:text-[31.68px] lg:text-[40px] xl:text-6xl font-semibold tracking-[4px] xl:tracking-[10px] leading-[1.1] text-center lg:leading-0 tracking-in-expand'>Hire me</h1>
         </div>
         <div className='flex justify-end mt-4 mr-10 md:ml-64 md:mt-2 md:justify-center'>
           <Image src={"/arrow.png"} alt='arrow' width={69} height={69} className='size-6 md:size-7 lg:size-14' />
@@ -28,7 +28,7 @@ export default function AboutPage() {
 
       <div className='lg:flex justify-center'>
         <div className='py-10 px-5 max-w-7xl'>
-          <h1 className='uppercase lg:text-center text-purple text-[22px] md:text-[42px] lg:text-[44px] xl:text-[50px] md:pt-10 font-medium tracking-[2px] leading-[1.1]'>Let&apos;s create something extraordinary together.</h1>
+          <h1 className='uppercase lg:text-center text-purple text-[22px] md:text-[42px] lg:text-[44px] xl:text-[50px] md:pt-10 font-medium tracking-[2px] leading-[1.1] tracking-in-expand'>Let&apos;s create something extraordinary together.</h1>
           <p className='py-5 lg:text-center text-sm md:text-[16px] lg:text-[20px] lg:px-36 leading-[1.8]'>Ready to turn your vision into reality? Let&apos;s collaborate and bring your ideas to life! Whether you&apos;re seeking captivating web design, striking graphics, or innovative digital solutions, I&apos;m here to help. Drop me a message and let&apos;s start the conversation. I can&apos;t wait to hear from you.</p>
         </div>
       </div>

@@ -1,3 +1,4 @@
+"use client"
 import Link from 'next/link'
 import React from 'react'
 
@@ -6,8 +7,13 @@ export default function Navbar() {
 <section className='pt-10 pb-5 md:px-10 md:pb-2 lg:py-12 lg:px-20 lg:pb-2'>
 <div className='flex flex-col md:flex-row lg:flex-row justify-between space-y-12 md:space-y-0 lg:space-y-0 items-center '>
       <div>
-     <Link href="/" className='text-[#DADADA] text-[25px] tracking-[10px] font-outfit'>
-       <span className='text-[#FFC918]'>e</span>mmanuel
+     <Link href="/" className='text-[#DADADA] text-[25px] tracking-[10px] font-outfit'
+       onClick={(e) => {
+        e.preventDefault()
+        window.location.href = '/'
+      }}
+     >
+       <p className='tracking-in-expand'><span className='text-[#FFC918]'>e</span>mmanuel</p>
        </Link>
       </div>
 

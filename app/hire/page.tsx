@@ -28,8 +28,8 @@ export default function page() {
 
       <div className='lg:flex justify-center'>
         <div className='py-10 px-5 max-w-7xl'>
-          <h1 className='uppercase lg:text-center text-purple text-[22px] md:text-[42px] lg:text-[44px] xl:text-[50px] md:pt-10 font-medium tracking-[2px] leading-[1.1]'>Let's create something extraordinary together.</h1>
-          <p className='py-5 lg:text-center text-sm md:text-[16px] lg:text-[20px] lg:px-36 leading-[1.8]'>Ready to turn your vision into reality? Let's collaborate and bring your ideas to life! Whether you're seeking captivating web design, striking graphics, or innovative digital solutions, I'm here to help. Drop me a message and let's start the conversation. I can't wait to hear from you.</p>
+          <h1 className='uppercase lg:text-center text-purple text-[22px] md:text-[42px] lg:text-[44px] xl:text-[50px] md:pt-10 font-medium tracking-[2px] leading-[1.1]'>Let&apos;s create something extraordinary together.</h1>
+          <p className='py-5 lg:text-center text-sm md:text-[16px] lg:text-[20px] lg:px-36 leading-[1.8]'>Ready to turn your vision into reality? Let&apos;s collaborate and bring your ideas to life! Whether you&apos;re seeking captivating web design, striking graphics, or innovative digital solutions, I&apos;m here to help. Drop me a message and let&apos;s start the conversation. I can&apos;t wait to hear from you.</p>
         </div>
       </div>
 

@@ -18,10 +18,10 @@ export default function Navbar() {
       <a href='/my-projects'>my projects</a>
     </li>
     <li className='hover:text-yellow'>
-      <a href='#'>about me </a>
+      <a href='/about'>about me </a>
     </li>
     <li className='hover:text-yellow'>
-      <a href='#'>hire me</a>
+      <a href='hire'>hire me</a>
     </li>
   </ul>
 

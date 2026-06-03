@@ -13,7 +13,7 @@ export default function page() {
 
 <div className='text-center space-y-1'>
 <p className='text-[10.5px] md:text-lg lg:text-[20px] lg:font-normal tracking-[2px] lg:tracking-[4px] font-medium'>Explore My Portfolio</p>
-<h1 className='text-[28px] md:text-[32px] lg:text-[40px] xl:text-6xl font-semibold tracking-[4px] xl:tracking-[10px]'>PROJECTS .</h1>
+<h1 className='text-[28px] md:text-[31.68px]] lg:text-[40px] xl:text-6xl font-semibold tracking-[4px] xl:tracking-[10px]'>PROJECTS .</h1>
 </div>
 <div className='flex justify-end mt-4 mr-10 md:ml-64 md:mt-2 md:justify-center'>
 <Image src={"/arrow.png"} alt='arrow' width={69} height={69} className='size-6 md:size-7 lg:size-14 ' />

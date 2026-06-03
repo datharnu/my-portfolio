@@ -10,14 +10,14 @@ export default function Footer() {
       <span className='text-[#FFC918]'>e</span>mmanuel
       </Link>
       {/* icons */}
-<Link href={''}>
+<Link href='https://www.linkedin.com/in/emmanuelolagbemi/' target='_blank' >
 <Image src={'/linkedin.png'}
         className='w-8 h-8'
     alt="linkedin-icon" width={100} height={100}
     />
 </Link>
 
-<Link href={""}>
+<Link href="https://github.com/datharnu" target='_blank'>
 <Image src={'/github.png'}
         className='w-7 h-7 rounded-sm'
     alt="linkedin-icon" width={100} height={100}

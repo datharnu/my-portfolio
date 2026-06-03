@@ -27,13 +27,13 @@ export default function Myworks() {
     to deliver meaningful results.
   </p>
 
-  <Link href={''}>
+  <Link href={'/my-projects'}>
     <p className='font-medium text-[16px] mt-4 border-b-2 w-fit border-black'>Explore {'>'}{'>'}</p>
   </Link>
 
   {/* Phone mockup — pinned to bottom */}
   <div className='absolute bottom-0 left-0 right-0  md:hidden'>
-<Link href={""} >
+<Link href="https://www.picha.fun/" target="_blank" >
 <Image
       src="/phone-mockup3.png"
       alt="phone-mockup"
@@ -46,7 +46,7 @@ export default function Myworks() {
 
   {/* large screen mockup */}
 <div className=" absolute -bottom-72 right-10 hidden md:block">
-<Link href={""}>
+<Link href="https://www.picha.fun/" target="_blank">
 <Image
     src="/phone-mockup3.png"
     alt="phone-mockup"
@@ -79,10 +79,12 @@ export default function Myworks() {
         A P2P housing marketplace connecting homeowners, tenants, flatmates, and roommates. 
         Features include property listings, real-time chat, dashboards, scheduling, authentication, and payment integration.
         </p>
-
+        <Link href="https://www.picha.fun/" target="_blank" >
         <button className='mt-6 border-b-2 border-purple text-yellow tracking-[2px] hover:text-white transition-colors'>
           View Rentville {'>'}{'>'}
         </button>
+        </Link>
+
       </div>
 
       {/* Picha */}
@@ -97,9 +99,12 @@ export default function Myworks() {
           appear in with a single selfie.
         </p>
 
-        <button className='mt-6 border-b-2 border-purple tracking-[2px] text-yellow hover:text-white transition-colors'>
+<Link href="https://www.picha.fun/" target="_blank">
+<button className='mt-6 border-b-2 border-purple tracking-[2px] text-yellow hover:text-white transition-colors'>
           View Picha {'>'}{'>'}
         </button>
+</Link>
+   
       </div>
 
     </div>

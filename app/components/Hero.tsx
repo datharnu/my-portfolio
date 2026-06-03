@@ -1,6 +1,7 @@
 "use client"
 import React, { useEffect } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Hero() {
   useEffect(() => {
@@ -93,9 +94,11 @@ As a founder and builder, I enjoy turning ideas into products, solving complex p
 and developing reliable solutions that make a meaningful impact. My work focuses on performance, 
 usability, and creating technology that serves both users and business goals.
 
+<Link href='/about'>
 <p className="w-fit text-yellow text-[14px] pt-4 lg:text-[14px] xl:text-[16px] tracking-[1px] border-b-2 border-purple">
   More About Me {">"}{">"}
 </p>
+</Link>
 </p>
 </div>
 </section>

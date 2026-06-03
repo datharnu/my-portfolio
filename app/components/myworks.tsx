@@ -79,7 +79,7 @@ export default function Myworks() {
         A P2P housing marketplace connecting homeowners, tenants, flatmates, and roommates. 
         Features include property listings, real-time chat, dashboards, scheduling, authentication, and payment integration.
         </p>
-        <Link href="https://www.picha.fun/" target="_blank" >
+        <Link href="https://www.rentville.ng/" target="_blank" >
         <button className='mt-6 border-b-2 border-purple text-yellow tracking-[2px] hover:text-white transition-colors'>
           View Rentville {'>'}{'>'}
         </button>

@@ -63,7 +63,7 @@ export default function Myworks() {
 
     <div className='uppercase text-purple font-medium mb-12'>
       <h1 className='text-5xl lg:text-7xl tracking-[5px]'>
-        startups i've built.
+        startups i&apos;ve built.
       </h1>
     </div>
 

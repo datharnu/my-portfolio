@@ -28,9 +28,9 @@ export default function page() {
 <p className='py-5 text-sm md:text-[16px] lg:px-36 leading-[1.8]'>With a hunger for building and a bias for shipping, I craft solutions that go beyond the screen engineering platforms where every feature solves a real problem, every line of code serves a purpose, and every product tells the story of an idea brought to life.</p>
 </div>
 {/* Startup and fullstack */}
-{projectData.map((data) => {
+{projectData.map((data, index) => {
     return (
-<div className='lg:flex gap-5 lg:pt-20'>
+<div key={index} className='lg:flex gap-5 lg:pt-20'>
 <div className='lg:max-w-[40%] '>
     <p className='text-[15px] md:text-[16px]  text-yellow tracking-[3px] pt-5'>Sass & Enterprise Projects</p>
     <p className='uppercase text-purple text-[32px] md:text-[42px]  font-medium tracking-[4px] md:tracking-[6px] leading-[1.1]'>

@@ -8,9 +8,13 @@ export default function Navbar() {
 <div className='flex flex-col md:flex-row lg:flex-row justify-between space-y-12 md:space-y-0 lg:space-y-0 items-center '>
       <div>
      <Link href="/" className='text-[#DADADA] text-[25px] tracking-[10px] font-outfit'
-       onClick={(e) => {
+      onClick={(e) => {
         e.preventDefault()
-        window.location.href = '/'
+        if (window.location.pathname === '/') {
+          window.location.reload()
+        } else {
+          window.location.href = '/'
+        }
       }}
      >
        <p className='tracking-in-expand'><span className='text-[#FFC918]'>e</span>mmanuel</p>

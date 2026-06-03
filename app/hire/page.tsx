@@ -3,7 +3,7 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
 
-export default function page() {
+export default function AboutPage() {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')

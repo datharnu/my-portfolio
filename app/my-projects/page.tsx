@@ -3,7 +3,7 @@ import React from 'react'
 import CardComponent from './components/card'
 import { projectData } from '../utils/data'
 
-export default function page() {
+export default function ProjectPage() {
     
 
   return (
